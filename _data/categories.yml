@@ -1,0 +1,21 @@
+- id: ai-safety
+  label: AI safety research
+  color: c-ai
+- id: education
+  label: School
+  color: c-edu
+- id: job
+  label: Jobs
+  color: c-job
+- id: internship
+  label: Internships and co-ops
+  color: c-int
+- id: club
+  label: Clubs and teams
+  color: c-club
+- id: sports
+  label: Sports
+  color: c-sport
+- id: advocacy
+  label: Advocacy and activism
+  color: c-adv

@@ -1,0 +1,12 @@
+{% assign cur = include.current %}{% assign cur_s = site.data.streams | where: "id", cur | first %}{% assign group = cur_s.parent | default: cur %}
+<ul class="stream-tabs" aria-label="Focused views">
+  <li><a href="{{ '/' | relative_url }}"{% if cur == "" %} aria-current="page"{% endif %}>Full Timeline</a></li>
+  {% for st in site.data.streams %}{% unless st.parent %}<li><a href="{{ '/streams/' | append: st.id | append: '/' | relative_url }}"{% if st.id == group %} aria-current="page"{% endif %}>{{ st.title }}</a></li>
+  {% endunless %}{% endfor %}
+</ul>
+{% for p in site.data.streams %}{% unless p.parent %}{% assign kids = site.data.streams | where: "parent", p.id %}{% if kids.size > 0 %}
+<ul class="stream-tabs sub" aria-label="{{ p.title }} by type" data-group="{{ p.id }}"{% unless group == p.id %} hidden{% endunless %}>
+  <li><a href="{{ '/streams/' | append: p.id | append: '/' | relative_url }}"{% if cur == p.id %} aria-current="page"{% endif %}>All {{ p.title }}</a></li>
+  {% for k in kids %}<li><a href="{{ '/streams/' | append: k.id | append: '/' | relative_url }}"{% if cur == k.id %} aria-current="page"{% endif %}>{{ k.title }}</a></li>
+  {% endfor %}
+</ul>{% endif %}{% endunless %}{% endfor %}

@@ -1,0 +1,497 @@
+- id: youth-wrestling
+  chapter: foundations
+  category: sports
+  date: 2012-01
+  precision: year
+  title: Started in youth wrestling
+  summary: Competed with the Monona Grove/McFarland youth club, the same program I later helped lead.
+  status: sourced
+  sources:
+  - label: McFarland Thistle
+    url: https://www.hngnews.com/mcfarland_thistle/sports/monona-grove-mcfarland-wrestling-club-starts-out-strong/article_1d0e50ba-e2ee-5e48-9b3b-d75e6b503d53.html
+- id: state-2020
+  chapter: foundations
+  category: sports
+  tags:
+  - leadership
+  tracks:
+  - wrestling
+  date: 2020-02
+  title: Among the first state qualifiers in program history
+  summary: One of the first three wrestlers from the Monona Grove/McFarland co-op to reach the WIAA state tournament.
+  status: sourced
+  sources:
+  - label: McFarland Thistle (2020)
+    url: https://www.hngnews.com/leader_independent/after-experience-at-state-zach-to-get-back-to-work/article_6c4290c2-367d-57e0-acda-9773dd6aab09.html
+  - label: McFarland Thistle (2022)
+    url: https://www.hngnews.com/mcfarland_thistle/article_40a95318-98ce-11ec-a593-034fa92f2629.html
+- id: marines-award
+  chapter: foundations
+  category: sports
+  tags:
+  - leadership
+  tracks:
+  - wrestling
+  - football
+  date: 2020-06
+  title: Character and Leadership All-American (NWCA)
+  summary: Named a National Wrestling Coaches Association High School Character and Leadership All-American as a junior, presented by the U.S. Marine Corps. My coach told the paper I was "usually the first guy there and the last to leave," pointing to volunteering with Take a Vet Fishing and Shared Table and the home gym I opened to teammates during COVID.
+  status: sourced
+  sources:
+  - label: NWCA All-American list
+    url: https://nwcaonline.com/sports/2024/7/18/high-school-character-leadership-all-americans.aspx
+  - label: McFarland Thistle
+    url: https://www.hngnews.com/mcfarland_thistle/gunderson-earns-honor-from-marines/article_2373db52-792f-55fd-b564-32f32b4248d1.html
+- id: senior-profile
+  chapter: foundations
+  category: sports
+  tags:
+  - leadership
+  tracks:
+  - wrestling
+  - football
+  date: 2021-04
+  precision: year
+  title: Three-time captain, headed to engineering
+  summary: Profiled as a three-sport athlete and three-time wrestling captain, with plans to study computer hardware engineering at UW–Madison.
+  status: sourced
+  sources:
+  - label: WisSports
+    url: https://www.wissports.net/news_article/show/1153090
+- id: lions-scholarship
+  chapter: foundations
+  category: education
+  tracks:
+  - high-school
+  tags:
+  - leadership
+  date: 2021-05
+  precision: year
+  title: McFarland Lions Club scholarship
+  summary: Community scholarship for academics and leadership.
+  status: self-reported
+  sources: []
+- id: coach-quote
+  chapter: foundations
+  category: sports
+  tags:
+  - leadership
+  date: 2021-11
+  title: Leadership that outlasted my time on the team
+  summary: After I graduated, the head coach named my work ethic and leadership as the bar for the program.
+  status: sourced
+  sources:
+  - label: McFarland Thistle
+    url: https://www.hngnews.com/mcfarland_thistle/article_f69e1e44-d5eb-5d25-82f7-e186a86e1370.html
+- id: tanks-project
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: 2023-12
+  title: Tanks! – Two-player embedded game (ECE 353, Introduction to Microprocessor Systems)
+  summary: Built a two-player tank game on a PSoC 6 running FreeRTOS, with animated tanks, turrets, and bouncing bullets, linked over UART and controlled with joysticks, an IMU, and EEPROM-backed state. I wrote about 7,500 lines of code in two weeks.
+  status: self-reported
+  sources: []
+- id: tech-exploration-lab
+  chapter: engineering
+  category: club
+  tracks:
+  - uw
+  tags:
+  - leadership
+  - entrepreneurship
+  date: 2025-04
+  title: 'Most Innovative award, Tech Exploration Lab Spring Open House: Unload'
+  summary: Led Unload, an AI-powered voice journaling app for mental health. I came up with the idea and pulled together a team of four across psychology, design, and development. We did user research with guidance from the Center for Healthy Minds, and as team lead and machine learning developer I built the voice-based demo. It placed 2nd in the Most Innovative category, as judged by industry professionals, with a cash prize.
+  status: sourced
+  sources:
+  - label: UW Tech Exploration Lab
+    url: https://techexplorationlab.wisc.edu/2025/04/27/energizing-the-future-highlights-from-the-uw-tech-exploration-lab-spring-open-house/
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/Unload
+  skills:
+  - speech-to-text
+  - text-to-speech
+  - LLM prompting
+  - team management
+- id: ece-scholarship-speech
+  chapter: engineering
+  category: education
+  tags:
+  - leadership
+  tracks:
+  - uw
+  date: 2025-10
+  title: Student speaker, ECE scholarship reception
+  summary: Spoke for the recipients after receiving my fourth scholarship, the Donald R. Norris, about how it freed time to help others, take internships, and do research.
+  status: sourced
+  sources:
+  - label: UW–Madison College of Engineering
+    url: https://engineering.wisc.edu/blog/781k-in-scholarships-awarded-to-ece-undergraduates/
+- id: ece-capstone
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: 2025-12
+  title: Best project award, ECE capstone (GPU section)
+  summary: Our team, FFTeam, rebuilt the FFT algorithm on the GPU in CUDA for real-time neural signal processing and won the instructors' choice award in the GPU Algorithm and System Design capstone.
+  status: sourced
+  sources:
+  - label: UW–Madison College of Engineering
+    url: https://engineering.wisc.edu/blog/27-ece-design-teams-participate-in-capstone-open-house/
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/ECE455
+- id: dc-cancer-advocacy
+  chapter: now
+  category: advocacy
+  tags:
+  - advocacy
+  - leadership
+  date: '2026-10-05'
+  title: Metastatic breast cancer advocacy in Washington, D.C.
+  summary: Went with my mother, who lives with metastatic breast cancer, to METAvivor's Stage IV Stampede and Summit. Together we met with two U.S. representatives and two U.S. senators about metastatic breast cancer research and care.
+  status: self-reported
+  sources:
+  - label: 'METAvivor: Stage IV Stampede & Summit 2026 (event)'
+    url: https://metavivor.org/events-campaigns/register-for-stage-iv-stampede-2026/
+- id: ya-scholarship
+  chapter: foundations
+  category: internship
+  tags:
+  - leadership
+  tracks:
+  - high-school
+  - credo
+  date: 2021-05
+  precision: year
+  title: Youth Apprenticeship scholarship
+  summary: Scholarship awarded for my electrical engineering youth apprenticeship at Credo Product Development.
+  status: self-reported
+  sources: []
+- id: lens-compute-verification
+  chapter: now
+  category: ai-safety
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - advocacy
+  - governance
+  date: '2026-09-20'
+  title: Expert tier, Compute Verification 1 (Lens Academy)
+  summary: Earned the expert tier in Lens Academy's Compute Verification Intensive, September 2026 cohort.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/ZDHDeQ29cOoPtvfgjYK0yg
+- id: lens-ai-futures
+  chapter: now
+  category: ai-safety
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - advocacy
+  - governance
+  date: '2026-09-25'
+  title: 'Expert tier, AI Futures: Forecasting and Strategy (Lens Academy)'
+  summary: Earned the expert tier in AI forecasting and strategy in the SAIF Intensive, September 2026 cohort.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/jnDz9gzf7AJDgg7GK_EetQ
+- id: apart-digital-minds
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-14'
+  title: 'Apart Research sprint: Examining stance drifting in multi-turn agent interactions'
+  summary: Solo project at the Digital Minds Research Sprint. I proposed a protocol for measuring how an AI agent's self-reports drift over a single conversation, testing a tutor agent across eight turns with adversarial, neutral, and supportive simulated students.
+  status: sourced
+  sources:
+  - label: Project and reviews (Apart Research)
+    url: https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/stance-drift
+- id: apart-incident-response
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-09-11'
+  title: 'Apart Research sprint: Discovering honeypots from resampled behavior in evaluation'
+  summary: Solo project at the AI Incident Response Sprint. I tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning, then turned into honeypots. The main finding was that discovery is compute-bound; I released the adaptive search method for others to validate.
+  status: sourced
+  sources:
+  - label: Project and review (Apart Research)
+    url: https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/sirens_discovery
+- id: uw-graduation
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: '2025-12-20'
+  title: Graduated from UW–Madison
+  summary: B.S. in Computer Engineering with the named option in Machine Learning and Data Science, with a second major in Computer Sciences.
+  status: self-reported
+  sources:
+  - label: About the ML and Data Science option
+    url: https://guide.wisc.edu/undergraduate/engineering/electrical-computer-engineering/computer-engineering-bs/computer-engineering-machine-learning-data-science-bs
+  - label: Why the department created it
+    url: https://engineering.wisc.edu/news/new-machine-learning-and-data-science-option-offers-ece-undergrads-in-demand-skills
+  - label: Computer Sciences major
+    url: https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/
+- id: waisi-scholars
+  chapter: engineering
+  category: ai-safety
+  tracks:
+  - waisi
+  tags:
+  - ai-safety
+  - technical
+  date: 2024-12
+  title: Finished WAISI's Technical AI Safety Fundamentals, joined the scholars reading group
+  summary: After the seven-week cohort, I moved into WAISI's weekly scholars reading group on AI safety research and stayed through graduation.
+  status: self-reported
+  sources: []
+- id: tibetan-asr
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-10'
+  title: 'Research poster, IFDS Research Expo: Domain and capacity in low-resource Tibetan speech recognition'
+  summary: 'My hunch was that a speech model trained on New Testament readings would fail the languages of other cultures. Meta''s MMS learned Tibetan almost entirely from scripture read by a single speaker. I benchmarked it, then fine-tuned it on a Jetson AGX Orin with a parameter-efficient adapter, using secular Tibetan news recordings from far more speakers than Meta used. Changing the training domain cut character error rate from 24.1% to 19.9% with no change to English. Full fine-tuning reached 16.0% but made English 0.96 points worse. Quantizing to INT4 barely mattered (0.2 points): the data was the limit, not the bit width.'
+  status: sourced
+  sources:
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline
+- id: hairnet
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: 2025-05
+  title: 'HairNET: generating hairstyles with diffusion (ECE 539, Introduction to Artificial Neural Networks)'
+  summary: Team project fine-tuning a diffusion model with LoRA to generate realistic, customizable hairstyles from a photo, so people can try a look before committing to it.
+  status: sourced
+  sources:
+  - label: Code (GitHub)
+    url: https://github.com/Damion-14/HairNET
+- id: run-the-lab
+  chapter: now
+  category: advocacy
+  tracks:
+  - layterms
+  tags:
+  - advocacy
+  - ai-safety
+  - governance
+  - field-building
+  - entrepreneurship
+  date: '2026-09-25'
+  title: Run the Lab! – Game built for Layterms at Mangrove's Game Night hackathon
+  summary: Part of Layterms, my grassroots AI safety education project. I built this three-minute game at Mangrove's AI safety game hackathon. You play the CEO of an AI lab choosing between pushing capabilities and investing in alignment. Its three rounds show why labs race without rules, why rules fail without verification, and how hardware checks on AI chips can make holding back safe.
+  status: sourced
+  sources:
+  - label: Play it (Layterms)
+    url: https://labceo.layterms.org/
+  - label: Game Night hackathon (Mangrove)
+    url: https://mangrove.one/hackathon/game-night
+- id: fakenews
+  chapter: engineering
+  category: club
+  tracks:
+  - uw
+  date: 2023-02
+  title: Fake news detector, MadData '23 hackathon
+  summary: In 24 hours at UW–Madison's MadData '23 hackathon, our team of four built a working website that flags whether a news article is likely real or fake by averaging the predictions of several machine learning models. I worked on the back end, building and testing models including Naive Bayes, a decision tree, and a Passive Aggressive classifier, and dropped the ones that performed poorly on our dataset.
+  status: sourced
+  sources:
+  - label: Devpost
+    url: https://devpost.com/software/fake-news-detector-p2b86i
+  - label: Code (GitHub)
+    url: https://github.com/Yogesh914/fakenews
+- id: qiskit-2023
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: 2023-07
+  title: Qiskit Global Summer School 2023 (IBM)
+  summary: 'Two-week intensive on quantum computing, themed "Theory to Implementation": lectures from IBM quantum engineers and hands-on labs on real quantum hardware.'
+  status: sourced
+  sources:
+  - label: Qiskit Global Summer School 2023 (IBM Research)
+    url: https://research.ibm.com/blog/qiskit-summer-school-2023
+- id: engineering-expo
+  chapter: engineering
+  tracks:
+  - uw
+  tags:
+  - leadership
+  date: 2024-04
+  title: Volunteer, UW–Madison Engineering Expo
+  summary: Ran the slingshot car activity for visiting kids with a few other engineers. When the step-by-step instructions lost the room, I cut them back and gave the kids room to design their own, and a few came up with genuinely inventive cars. I came back the next year to volunteer on the cleanup crew.
+  status: sourced
+  sources:
+  - label: Engineering EXPO 2024 (UW–Madison)
+    url: https://earthfest.wisc.edu/events/engineering-expo-2024
+- id: xes-spotlight
+  chapter: engineering
+  category: internship
+  tracks:
+  - xes
+  date: 2024-09
+  title: X-ES Student Spotlight
+  summary: Extreme Engineering Solutions featured me as its co-op Student Spotlight for September 2024, with my testimonial on the co-op experience.
+  status: self-reported
+  sources: []
+- id: radtke-scholarship
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  tags:
+  - education
+  date: 2022-08
+  title: Albert A. Radtke Scholarship
+  summary: Engineering scholarship for the 2022–23 school year. My first UW engineering scholarship.
+  status: self-reported
+  sources: []
+- id: richardson-scholarship
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  tags:
+  - education
+  date: 2023-08
+  title: Claude and Dora Richardson Engineering Scholarship
+  summary: Engineering scholarship for the 2023–24 school year.
+  status: self-reported
+  sources: []
+- id: hicks-scholarship
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  tags:
+  - education
+  date: 2025-01
+  title: Stratton E. Hicks Scholarship
+  summary: Engineering scholarship for the spring 2025 semester.
+  status: self-reported
+  sources: []
+- id: norris-scholarship
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  tags:
+  - education
+  date: 2025-08
+  title: Donald R. Norris Scholarship
+  summary: Engineering scholarship for the 2025–26 school year. My fourth UW scholarship; I spoke for the recipients at the ECE scholarship reception that October.
+  status: self-reported
+  sources: []
+- id: bluedot-future-of-ai
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  - governance
+  tracks:
+  - ai-safety-pivot
+  date: '2026-07-23'
+  title: Future of AI (BlueDot Impact)
+  summary: Completed BlueDot Impact's Future of AI course in my first weeks working on AI safety full time, covering AI safety and ethics.
+  status: sourced
+  sources:
+  - label: Certificate
+    url: https://bluedot.org/certification?r=recQ33carRjA5jsbv
+- id: level-set
+  chapter: now
+  category: club
+  tags:
+  - entrepreneurship
+  date: '2026-10-20'
+  title: Level Set, StartingBlock Madison
+  summary: Starting StartingBlock Madison's six-week foundational program for founders on Oct 20, using the LeanStack framework to build and validate a business model through customer discovery.
+  status: sourced
+  sources:
+  - label: Level Set (StartingBlock Madison)
+    url: https://www.startingblockmadison.org/level-set
+- id: lens-ai-control-coaching
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-12'
+  title: Coaching Lens Academy's AI Control October Intensive
+  summary: Volunteer coach for a group in Lens Academy's AI Control intensive, five 90-minute sessions from Oct 12 to 16.
+  status: self-reported
+  sources: []
+- id: workshop-paper-2026
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-10-01'
+  title: Submitted my first workshop paper
+  summary: Submitted a 4-page research paper to an AI safety workshop. It's under double-blind review, so I'll share the title, venue, and paper once decisions are out in mid-October.
+  status: self-reported
+  sources: []
+- id: capitol-advocacy
+  chapter: engineering
+  category: advocacy
+  tracks:
+  - uw
+  tags:
+  - advocacy
+  date: '2023-02-22'
+  title: UW Lobbying Day with ASM, Wisconsin State Capitol
+  summary: Took part in UW Lobbying Day with the Associated Students of Madison (ASM), UW–Madison's student government, meeting with state lawmakers as a student advocate. Students from across the UW System met with the governor, legislators from both parties, and members of the Joint Finance Committee.
+  status: sourced
+  sources:
+  - label: 'ASM news: UW Lobbying Day (Feb 22, 2023)'
+    url: https://kb.wisc.edu/asm/news.php?id=13030
+  - label: ASM
+    url: https://asm.wisc.edu/
+- id: lens-facilitator
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-10'
+  title: Expert tier, Facilitator Training Program (Lens Academy)
+  summary: Earned the expert tier in Lens Academy's Facilitator Training Program, which prepares volunteers to coach and facilitate its AI safety cohorts.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/gKcU7WZ17YteH-zatvXJxg

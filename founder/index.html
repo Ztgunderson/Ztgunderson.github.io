@@ -1,0 +1,13 @@
+---
+layout: default
+title: Founder
+profile: founder
+permalink: /founder/
+---
+{% assign p = site.data.profiles | where: "id", page.profile | first %}
+<section class="intro">
+  <h1>{{ p.headline }}</h1>
+  <p>{{ p.subtitle }}</p>
+  <p class="full-link"><a href="{{ '/full/' | relative_url }}">See my full timeline →</a></p>
+</section>
+{% include timeline.html tag="" profile=page.profile %}

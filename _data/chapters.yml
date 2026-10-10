@@ -1,0 +1,36 @@
+- id: now
+  title: AI Safety
+  layer: canopy
+  years: 2026 – now
+  intro: 'In July 2026 I left production computer vision work to move into AI safety full time. My focus is whether safety holds up once generalist AI models run on real hardware at the edge, plus helping everyday voters understand AI risk.
+
+    '
+  intros:
+    entrepreneurship: 'Since July 2026: building Layterms and its games for everyday voters, alongside TempVents.'
+    leadership: 'Leading in this phase means showing up for others: going to Washington with my mom, and helping neighbors understand AI risk.'
+    ai-safety: 'In July 2026 I moved into AI safety full time: two research sprints, two expert-tier courses, and community organizing in Wisconsin.'
+    advocacy: 'Since July 2026 I''ve spent much of my time on the civic side of AI safety: organizing with ControlAI Wisconsin, volunteering with AISAP, and meeting lawmakers in Washington.'
+- id: engineering
+  title: University of Wisconsin–Madison
+  layer: trunk
+  years: 2021 – 2026
+  intro: 'Computer engineering at UW–Madison, campus jobs, research, and internships that moved from circuits to embedded systems to computer vision, ending in a production system I shipped for a farm.
+
+    '
+  intros:
+    entrepreneurship: Co-founding Arkin & Gunderson, founding the Unload team, and taking a computer vision system to production for Heartland through Gundy Neural Designs.
+    leadership: From support desk to lead, then founding and leading my own team. College is where leadership moved from the mat into work.
+    ai-safety: 'Where AI safety started for me: WAISI''s fundamentals course and scholars program at UW–Madison.'
+    advocacy: Policy work during college, alongside engineering.
+    education: B.S. in Computer Engineering with the Machine Learning and Data Science option and a second major in Computer Sciences, finished in December 2025 with a best-project capstone award.
+- id: foundations
+  title: McFarland High School and Indian Mound Middle School
+  layer: roots
+  years: 2012 – 2021
+  intro: 'The first seeds were youth wrestling and a VEX IQ robotics team. In high school they took root: on the wrestling mat and the football line I learned that most of leadership is showing up first, staying last, and making room for the people behind you. In the school shops and a youth apprenticeship I started a pattern I still follow: teach myself a machine nobody is using, get it producing something real, then teach the team.
+
+    '
+  intros:
+    entrepreneurship: 'My first taste of running production: the embroidery side of the school''s student-run business.'
+    leadership: 'Where I learned to lead: three-time wrestling captain, football captain, an academic letter, a coach-nominated character award, scholarships, a paid youth apprenticeship in electrical engineering, and training my team in the school''s manufacturing business.'
+    education: An academic letter, AP courses, the Metals 1–3 sequence, and college electronics courses at Madison College before I graduated high school.

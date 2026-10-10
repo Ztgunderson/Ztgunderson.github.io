@@ -1,0 +1,73 @@
+- id: founder
+  title: Founder
+  headline: Engineer and founder building for AI safety
+  subtitle: 'I start things and get them into people''s hands: an edge AI consulting company that put computer vision into production for a client, an HVAC tooling startup improving air quality on construction sites, and Layterms, a public education project on AI risk. Now I''m putting that founder experience to work on AI safety.
+
+    '
+  intros:
+    now: 'Since July 2026 I''ve worked on AI safety full time. As a founder, that means building Layterms for everyday voters, joining StartingBlock''s Level Set program, and grounding it all in my own safety research.
+
+      '
+    engineering: 'College is where I started building companies: Gundy Neural Designs, my edge AI consulting company, and Arkin & Gunderson, an HVAC tooling startup improving air quality on construction sites, plus founding and leading the Unload team.
+
+      '
+    foundations: 'Early practice in making things people pay for: running embroidery production for the school''s student business and a paid youth apprenticeship in product development.
+
+      '
+  include:
+  - ai-safety-pivot
+  - layterms
+  - run-the-lab
+  - level-set
+  - lens-academy
+  - lens-facilitator
+  - lens-ai-control-coaching
+  - apart-incident-response
+  - apart-digital-minds
+  - workshop-paper-2026
+  - tibetan-asr
+  - arkin-gunderson
+  - gnd
+  - heartland
+  - tech-exploration-lab
+  - fakenews
+  - uw-graduation
+  - ceete-lead
+  - credo
+  - spartan-embroidery
+- id: safety-gov
+  title: Technical governance
+  headline: Engineer working on technical AI governance
+  subtitle: 'I''ve deployed AI on real hardware, and now I work on how to verify and govern it: training in compute verification and AI forecasting, evaluation research on how AI agents behave, and organizing with lawmakers on AI policy.
+
+    '
+  intros:
+    now: 'Since July 2026 I''ve worked on AI safety full time, with a focus on technical governance: compute verification and AI futures training, evaluation research, coaching others through AI Control, and organizing on AI policy in Wisconsin.
+
+      '
+    engineering: 'The technical grounding: GPU computing, regulated medical-device software, production computer vision, and my start in AI safety through WAISI. Plus my first time advocating to lawmakers at the Wisconsin State Capitol.
+
+      '
+  include:
+  - ai-safety-pivot
+  - lens-academy
+  - lens-compute-verification
+  - lens-ai-futures
+  - lens-facilitator
+  - lens-ai-control-coaching
+  - bluedot-future-of-ai
+  - controlai-wi
+  - run-the-lab
+  - dc-cancer-advocacy
+  - apart-incident-response
+  - apart-digital-minds
+  - workshop-paper-2026
+  - tibetan-asr
+  - gnd
+  - heartland
+  - ece-capstone
+  - exact-sciences
+  - waisi
+  - waisi-scholars
+  - capitol-advocacy
+  - uw-graduation

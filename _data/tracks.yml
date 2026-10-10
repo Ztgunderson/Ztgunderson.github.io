@@ -1,0 +1,386 @@
+- id: wrestling
+  chapter: foundations
+  category: sports
+  tracks:
+  - high-school
+  tags:
+  - leadership
+  title: Varsity wrestling, Monona Grove/McFarland co-op
+  summary: Four seasons on varsity and three-time captain by senior year.
+  start: 2017-11
+  end: 2021-03
+  color: t1
+  status: sourced
+  sources:
+  - label: McFarland Thistle
+    url: https://www.hngnews.com/mcfarland_thistle/article_c95c0a84-6aa3-51cd-a864-8aece5094a35.html
+  - label: WisSports
+    url: https://www.wissports.net/news_article/show/1153090
+- id: football
+  chapter: foundations
+  category: sports
+  tracks:
+  - high-school
+  tags:
+  - leadership
+  title: Varsity football, McFarland
+  summary: Three varsity seasons on the defensive line, team captain, and twice named first-team all-conference.
+  start: 2018-08
+  end: 2021-04
+  color: t2
+  status: sourced
+  sources:
+  - label: WisSports
+    url: https://www.wissports.net/news_article/show/1153090
+- id: uw
+  chapter: engineering
+  category: education
+  title: Computer engineering and computer sciences, UW–Madison
+  summary: Computer Engineering with the Machine Learning and Data Science option, with a second major in Computer Sciences.
+  start: 2021-09
+  end: 2025-12
+  color: t3
+  status: self-reported
+  sources: []
+- id: badger-solar
+  chapter: engineering
+  category: club
+  tracks:
+  - uw
+  title: Badger Solar Racing, low voltage team
+  summary: Integrated CAN and UART communication ICs into the solar car's low-voltage board to strengthen the vehicle's communication systems, alongside I2C work.
+  start: 2021-09
+  end: 2022-12
+  color: t5
+  status: self-reported
+  sources:
+  - label: About the team (UW Engineering)
+    url: https://engineering.wisc.edu/blog/cross-college-collab-drives-innovation-badger-solar-racing
+- id: waisi
+  chapter: engineering
+  category: ai-safety
+  tags:
+  - ai-safety
+  - technical
+  tracks:
+  - uw
+  title: Wisconsin AI Safety Initiative (WAISI)
+  summary: Took WAISI's seven-week Technical AI Safety Fundamentals cohort in fall 2024, then joined its scholars reading group, meeting weekly to read AI safety research until I graduated.
+  start: 2024-10
+  end: 2025-12
+  status: sourced
+  sources:
+  - label: WAISI
+    url: https://waisi.org/
+  - label: About WAISI (UW Computer Sciences)
+    url: https://www.cs.wisc.edu/2025/03/13/waisi-presents-caip-advanced-ai-expo/
+- id: credo
+  chapter: foundations
+  category: internship
+  tags:
+  - leadership
+  tracks:
+  - high-school
+  title: Electrical engineering intern (Youth Apprenticeship), Credo Product Development
+  summary: Paid youth apprenticeship during senior year. PCB design for a low-current high-voltage supply and a microcontroller/sensor board, ATMega firmware, and a prototype; taught myself SOLIDWORKS and Altium.
+  start: 2020-08
+  end: 2021-05
+  color: t4
+  status: sourced
+  sources:
+  - label: Credo Product Development
+    url: https://www.credopd.com/
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: ceete
+  chapter: engineering
+  category: job
+  tracks:
+  - uw
+  title: Student consultant, CEETE
+  summary: Front-line Canvas and course-design support for College of Engineering faculty; technical lead for professors' learning-system problems.
+  start: 2021-07
+  end: 2022-08
+  color: t4
+  status: sourced
+  sources:
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: ceete-lead
+  chapter: engineering
+  category: job
+  tracks:
+  - uw
+  continues: ceete
+  tags:
+  - leadership
+  title: Promoted to lead student consultant, CEETE
+  summary: Promoted after a year. Trained and mentored new consultants, helped interview and hire, advised professors on instructional design and assessment, and wrote knowledge-base articles.
+  start: 2022-09
+  end: 2023-03
+  color: t4
+  status: sourced
+  sources:
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: exact-sciences
+  chapter: engineering
+  category: internship
+  title: System software intern, Exact Sciences
+  summary: Built a C#/.NET calibration tool for computer vision quality control, automated FLIR camera settings, and wrote Python utilities for ResNet training, under FDA design controls.
+  start: 2023-05
+  end: 2023-08
+  color: t7
+  status: self-reported
+  sources: []
+- id: smph-research
+  chapter: engineering
+  category: job
+  tracks:
+  - uw
+  title: Undergraduate research assistant, Banks Lab (UW SMPH)
+  summary: Interpretable machine learning on intracranial EEG across anesthesia, sleep, and waking states; MATLAB implementations and high-throughput cluster training.
+  start: 2023-03
+  end: 2024-05
+  color: t8
+  status: sourced
+  sources:
+  - label: Banks Laboratory (UW Anesthesiology)
+    url: https://anesthesia.wisc.edu/research/researchers/banks-laboratory/
+- id: xes
+  chapter: engineering
+  category: internship
+  title: Embedded test engineering co-op, Extreme Engineering Solutions
+  summary: Automated test workflows for ruggedized Linux embedded computers with shell scripts, added CI linters, and wrote inspection and functional test procedures for manufacturing technicians.
+  start: 2024-05
+  end: 2024-12
+  color: t7
+  status: self-reported
+  sources: []
+- id: gnd
+  chapter: engineering
+  category: job
+  shade: c-gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Founder, Gundy Neural Designs LLC
+  summary: My edge AI consulting company. I help clients put AI to work on their own hardware, from production computer vision to integrating fast (System 1) and reasoning (System 2) language models into their existing workflows.
+  start: 2024-11
+  end: ''
+  status: sourced
+  sources:
+  - label: Gundy Neural Designs
+    url: https://gundyneuraldesigns.com/
+- id: heartland
+  chapter: engineering
+  category: job
+  tracks:
+  - gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Computer vision for Heartland Ag Tech (GND client)
+  summary: Led a production computer vision pipeline for Heartland Ag Tech's potato line, taking it from prototype to a deployed quality-control system while working with their CEO and CTO to integrate AI into their business.
+  start: 2024-11
+  end: 2026-07
+  status: self-reported
+  sources: []
+- id: ai-safety-pivot
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  title: Full-time transition into AI safety
+  summary: Research sprints, AI safety coursework, and community organizing in Madison.
+  start: 2026-07
+  end: ''
+  color: t5
+  status: self-reported
+  sources: []
+- id: high-school
+  chapter: foundations
+  category: education
+  title: McFarland High School
+  tags:
+  - leadership
+  summary: Academic letter, AP courses, the Metals 1–3 sequence, and a youth apprenticeship in electrical engineering senior year.
+  start: 2017-09
+  end: 2021-06
+  color: t3
+  status: self-reported
+  sources: []
+- id: middle-school
+  chapter: foundations
+  category: education
+  title: Indian Mound Middle School
+  summary: Grades 6–8 in McFarland, where I joined the VEX IQ robotics club.
+  start: 2014-09
+  end: 2017-06
+  color: t6
+  status: self-reported
+  sources: []
+- id: controlai-wi
+  chapter: now
+  category: advocacy
+  shade: c-adv-deep
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - governance
+  title: ControlAI Wisconsin action group
+  summary: Member of ControlAI's Wisconsin citizens' group, which meets to track local AI news and take action with state and federal representatives on AI safety.
+  start: 2026-09
+  end: ''
+  color: t1
+  status: sourced
+  sources:
+  - label: ControlAI Wisconsin group
+    url: https://act.controlai.org/groups/controlai-citizens-wisconsin
+- id: aisap
+  chapter: now
+  category: advocacy
+  shade: c-adv
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - field-building
+  title: AI Safety Awareness Project
+  summary: Volunteer with AISAP, which runs community workshops that explain AI safety to the public.
+  start: 2026-09
+  end: ''
+  color: t7
+  status: sourced
+  sources:
+  - label: AI Safety Awareness Project
+    url: https://aisafetyawarenessproject.org/
+- id: layterms
+  chapter: now
+  category: advocacy
+  shade: c-adv-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - field-building
+  - entrepreneurship
+  title: Layterms, a nonpartisan walk-through museum of AI
+  summary: My grassroots AI safety education project, alongside organizing with ControlAI Wisconsin and AISAP. I'm building Layterms for everyday voters. It has plain-language rooms on AGI, forecasting, how AI is trained, compute, and verifying secret AI projects, interactive toy models, and a vote on two real proposals in Congress.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Layterms
+    url: https://layterms.org/
+- id: spartan-embroidery
+  chapter: foundations
+  category: club
+  tags:
+  - leadership
+  - entrepreneurship
+  tracks:
+  - high-school
+  title: Ran embroidery at Spartan Manufacturing
+  summary: Taught myself the student business's CNC embroidery machine, then trained and led a three-person team producing hats and beanies for sale.
+  start: 2019-09
+  end: 2020-06
+  status: self-reported
+  sources:
+  - label: Spartan Manufacturing store
+    url: https://spartan.market/
+- id: imms-robotics
+  chapter: foundations
+  category: club
+  tracks:
+  - middle-school
+  title: VEX IQ robotics team
+  summary: Built and competed with Indian Mound Middle School's VEX IQ robotics club in Wisconsin tournaments.
+  start: 2014-09
+  end: 2017-06
+  precision: year
+  status: self-reported
+  sources: []
+- id: lens-academy
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - advocacy
+  - field-building
+  title: Lens Academy, learner and volunteer coach and course builder
+  summary: Took Lens Academy's intensives as a learner and earned two expert-tier certificates. I now volunteer with Lens, unpaid. After earning the expert tier in its Facilitator Training Program, I'm coaching a group in the AI Control October 2026 Intensive and building Lens Academy's Project Course.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Lens Academy
+    url: https://lensacademy.org/
+- id: hs-it
+  chapter: foundations
+  category: job
+  tracks:
+  - high-school
+  title: IT support for McFarland High
+  summary: Repaired and maintained student iPads for the school over the summer.
+  start: 2020-06
+  end: 2020-08
+  status: self-reported
+  sources: []
+- id: early-college
+  chapter: foundations
+  category: education
+  tracks:
+  - high-school
+  title: Early college coursework at Madison College
+  summary: 12 college credits while in high school, including AC/DC Electronics I and II during senior year, plus A+ Hardware Essentials and Enterprise Client.
+  start: 2020-09
+  end: 2021-05
+  status: self-reported
+  sources: []
+- id: tormach-capstone
+  chapter: foundations
+  category: education
+  tracks:
+  - high-school
+  tags:
+  - leadership
+  title: Brought an idle Tormach CNC mill into service
+  summary: Metals 3 capstone. Learned CNC milling through Titans of CNC, proved toolpaths in wood, then machined the TITAN-1M part in metal.
+  start: 2020-09
+  end: 2020-12
+  status: self-reported
+  sources:
+  - label: 'Titans of CNC: TITAN-1M'
+    url: https://academy.titansofcnc.com/series/titan-1m
+- id: arkin-gunderson
+  chapter: engineering
+  category: job
+  shade: c-job-deep
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Co-founder, Arkin & Gunderson LLC (TempVents)
+  summary: Co-founded an HVAC startup, a side venture alongside my main work, to improve air quality on construction sites. Our product, TempVents, is pre-launch. We've built an MVP that two early users are trying, and we're demoing it as we work toward bringing it to market. I owned product development end to end, from research, customer interviews, and user-centered design to technical drafting and rapid prototyping. I also built our React website and a 15-second video campaign, ran prior art searches, and wrote and filed a provisional patent application.
+  start: 2025-03
+  end: ''
+  status: self-reported
+  sources: []
+- id: farm-work
+  chapter: foundations
+  category: job
+  tracks:
+  - high-school
+  title: Summer jobs on local farms
+  summary: Worked on local farms the summers after my freshman, sophomore, and junior years.
+  start: 2018-06
+  end: 2020-08
+  status: self-reported
+  sources: []

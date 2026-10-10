@@ -1,0 +1,43 @@
+- id: education
+  title: Education
+  intro: 'School from middle school through UW–Madison: coursework, awards, and the classes and projects that shaped how I build.
+
+    '
+- id: ai-safety
+  title: AI Safety
+  intro: 'From WAISI at UW–Madison to full-time AI safety work: research sprints, technical governance training, and community organizing.
+
+    '
+- id: advocacy
+  title: Advocacy
+  intro: 'Times I''ve spoken up in front of lawmakers and my community on issues that affect other people, from cancer research to AI risk.
+
+    '
+- id: leadership
+  title: Leadership
+  intro: 'Captaincies, a promotion to lead, founding a team, and the moments where my job was to bring other people along.
+
+    '
+- id: entrepreneurship
+  title: Entrepreneurship
+  intro: 'Things I started and built: a pre-launch startup with a provisional patent filed, a team I founded, a public education project, and a computer vision system I took to production for a client.
+
+    '
+- id: technical
+  parent: ai-safety
+  title: Technical
+  intro: 'Research and engineering on how AI systems behave: evaluation sprints with Apart Research and fine-tuning a speech model on edge hardware.
+
+    '
+- id: governance
+  parent: ai-safety
+  title: Governance
+  intro: 'Technical governance and policy: compute verification and AI futures training with Lens Academy, and pressing for AI safety policy with ControlAI Wisconsin.
+
+    '
+- id: field-building
+  parent: ai-safety
+  title: Field-building
+  intro: 'Helping more people understand and work on AI safety: coaching and building courses at Lens Academy, community workshops with AISAP, and Layterms for voters.
+
+    '

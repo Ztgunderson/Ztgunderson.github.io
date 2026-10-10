@@ -1,0 +1,13 @@
+---
+layout: default
+title: Stream
+stream: advocacy
+permalink: /streams/advocacy/
+---
+{% assign s = site.data.streams | where: "id", page.stream | first %}
+<section class="intro">
+  <h1>{{ s.title }}{% if s.parent %} · AI Safety{% endif %}</h1>
+  <p>{{ s.intro }}</p>
+  {% include stream-tabs.html current=page.stream %}
+</section>
+{% include timeline.html tag=page.stream %}
