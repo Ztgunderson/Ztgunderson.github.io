@@ -1,0 +1,394 @@
+events:
+- id: tech-exploration-lab
+  chapter: engineering
+  category: club
+  tracks:
+  - uw
+  tags:
+  - leadership
+  - entrepreneurship
+  date: 2025-04
+  title: 'Most Innovative award, Tech Exploration Lab Spring Open House: Unload'
+  summary: Led Unload, an AI-powered voice journaling app for mental health. I came up with the idea and pulled together a team of four across psychology, design, and development. We did user research with guidance from the Center for Healthy Minds, and as team lead and machine learning developer I built the voice-based demo. It placed 2nd in the Most Innovative category, as judged by industry professionals, with a cash prize.
+  status: sourced
+  sources:
+  - label: UW Tech Exploration Lab
+    url: https://techexplorationlab.wisc.edu/2025/04/27/energizing-the-future-highlights-from-the-uw-tech-exploration-lab-spring-open-house/
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/Unload
+  skills:
+  - speech-to-text
+  - text-to-speech
+  - LLM prompting
+  - team management
+- id: apart-digital-minds
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-14'
+  title: 'Apart Research sprint: Examining stance drifting in multi-turn agent interactions'
+  summary: Solo project at the Digital Minds Research Sprint. I proposed a protocol for measuring how an AI agent's self-reports drift over a single conversation, testing a tutor agent across eight turns with adversarial, neutral, and supportive simulated students.
+  status: sourced
+  sources:
+  - label: Project and reviews (Apart Research)
+    url: https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/stance-drift
+- id: apart-incident-response
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-09-11'
+  title: 'Apart Research sprint: Discovering honeypots from resampled behavior in evaluation'
+  summary: Solo project at the AI Incident Response Sprint. I tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning, then turned into honeypots. The main finding was that discovery is compute-bound; I released the adaptive search method for others to validate.
+  status: sourced
+  sources:
+  - label: Project and review (Apart Research)
+    url: https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/sirens_discovery
+- id: uw-graduation
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: '2025-12-20'
+  title: Graduated from UW–Madison
+  summary: B.S. in Computer Engineering with the named option in Machine Learning and Data Science, with a second major in Computer Sciences.
+  status: self-reported
+  sources:
+  - label: About the ML and Data Science option
+    url: https://guide.wisc.edu/undergraduate/engineering/electrical-computer-engineering/computer-engineering-bs/computer-engineering-machine-learning-data-science-bs
+  - label: Why the department created it
+    url: https://engineering.wisc.edu/news/new-machine-learning-and-data-science-option-offers-ece-undergrads-in-demand-skills
+  - label: Computer Sciences major
+    url: https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/
+- id: tibetan-asr
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-10'
+  title: 'Research poster, IFDS Research Expo: Domain and capacity in low-resource Tibetan speech recognition'
+  summary: 'My hunch was that a speech model trained on New Testament readings would fail the languages of other cultures. Meta''s MMS learned Tibetan almost entirely from scripture read by a single speaker. I benchmarked it, then fine-tuned it on a Jetson AGX Orin with a parameter-efficient adapter, using secular Tibetan news recordings from far more speakers than Meta used. Changing the training domain cut character error rate from 24.1% to 19.9% with no change to English. Full fine-tuning reached 16.0% but made English 0.96 points worse. Quantizing to INT4 barely mattered (0.2 points): the data was the limit, not the bit width.'
+  status: sourced
+  sources:
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline
+- id: run-the-lab
+  chapter: now
+  category: advocacy
+  tracks:
+  - layterms
+  tags:
+  - advocacy
+  - ai-safety
+  - governance
+  - field-building
+  - entrepreneurship
+  date: '2026-09-25'
+  title: Run the Lab! – Game built for Layterms at Mangrove's Game Night hackathon
+  summary: Part of Layterms, my grassroots AI safety education project. I built this three-minute game at Mangrove's AI safety game hackathon. You play the CEO of an AI lab choosing between pushing capabilities and investing in alignment. Its three rounds show why labs race without rules, why rules fail without verification, and how hardware checks on AI chips can make holding back safe.
+  status: sourced
+  sources:
+  - label: Play it (Layterms)
+    url: https://labceo.layterms.org/
+  - label: Game Night hackathon (Mangrove)
+    url: https://mangrove.one/hackathon/game-night
+- id: fakenews
+  chapter: engineering
+  category: club
+  tracks:
+  - uw
+  date: 2023-02
+  title: Fake news detector, MadData '23 hackathon
+  summary: In 24 hours at UW–Madison's MadData '23 hackathon, our team of four built a working website that flags whether a news article is likely real or fake by averaging the predictions of several machine learning models. I worked on the back end, building and testing models including Naive Bayes, a decision tree, and a Passive Aggressive classifier, and dropped the ones that performed poorly on our dataset.
+  status: sourced
+  sources:
+  - label: Devpost
+    url: https://devpost.com/software/fake-news-detector-p2b86i
+  - label: Code (GitHub)
+    url: https://github.com/Yogesh914/fakenews
+- id: level-set
+  chapter: now
+  category: club
+  tags:
+  - entrepreneurship
+  date: '2026-10-20'
+  title: Level Set, StartingBlock Madison
+  summary: Starting StartingBlock Madison's six-week foundational program for founders on Oct 20, using the LeanStack framework to build and validate a business model through customer discovery.
+  status: sourced
+  sources:
+  - label: Level Set (StartingBlock Madison)
+    url: https://www.startingblockmadison.org/level-set
+- id: lens-ai-control-coaching
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-12'
+  title: Coaching Lens Academy's AI Control October Intensive
+  summary: Volunteer coach for a group in Lens Academy's AI Control intensive, five 90-minute sessions from Oct 12 to 16.
+  status: self-reported
+  sources: []
+- id: workshop-paper-2026
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-10-01'
+  title: Submitted my first workshop paper
+  summary: Submitted a 4-page research paper to an AI safety workshop. It's under double-blind review, so I'll share the title, venue, and paper once decisions are out in mid-October.
+  status: self-reported
+  sources: []
+- id: lens-facilitator
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-10'
+  title: Expert tier, Facilitator Training Program (Lens Academy)
+  summary: Earned the expert tier in Lens Academy's Facilitator Training Program, which prepares volunteers to coach and facilitate its AI safety cohorts.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/gKcU7WZ17YteH-zatvXJxg
+tracks:
+- id: uw
+  chapter: engineering
+  category: education
+  title: Computer engineering and computer sciences, UW–Madison
+  summary: Computer Engineering with the Machine Learning and Data Science option, with a second major in Computer Sciences.
+  start: 2021-09
+  end: 2025-12
+  color: t3
+  status: self-reported
+  sources: []
+- id: credo
+  chapter: foundations
+  category: internship
+  tags:
+  - leadership
+  tracks:
+  - high-school
+  title: Electrical engineering intern (Youth Apprenticeship), Credo Product Development
+  summary: Paid youth apprenticeship during senior year. PCB design for a low-current high-voltage supply and a microcontroller/sensor board, ATMega firmware, and a prototype; taught myself SOLIDWORKS and Altium.
+  start: 2020-08
+  end: 2021-05
+  color: t4
+  status: sourced
+  sources:
+  - label: Credo Product Development
+    url: https://www.credopd.com/
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: ceete
+  chapter: engineering
+  category: job
+  tracks:
+  - uw
+  title: Student consultant, CEETE
+  summary: Front-line Canvas and course-design support for College of Engineering faculty; technical lead for professors' learning-system problems.
+  start: 2021-07
+  end: 2022-08
+  color: t4
+  status: sourced
+  sources:
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: ceete-lead
+  chapter: engineering
+  category: job
+  tracks:
+  - uw
+  continues: ceete
+  tags:
+  - leadership
+  title: Promoted to lead student consultant, CEETE
+  summary: Promoted after a year. Trained and mentored new consultants, helped interview and hire, advised professors on instructional design and assessment, and wrote knowledge-base articles.
+  start: 2022-09
+  end: 2023-03
+  color: t4
+  status: sourced
+  sources:
+  - label: CEETE staff profile
+    url: https://ceete.engr.wisc.edu/staff/gunderson-zachary/
+- id: gnd
+  chapter: engineering
+  category: job
+  shade: c-gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Founder, Gundy Neural Designs LLC
+  summary: My edge AI consulting company. I help clients put AI to work on their own hardware, from production computer vision to integrating fast (System 1) and reasoning (System 2) language models into their existing workflows.
+  start: 2024-11
+  end: ''
+  status: sourced
+  sources:
+  - label: Gundy Neural Designs
+    url: https://gundyneuraldesigns.com/
+- id: heartland
+  chapter: engineering
+  category: job
+  tracks:
+  - gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Computer vision for Heartland Ag Tech (GND client)
+  summary: Led a production computer vision pipeline for Heartland Ag Tech's potato line, taking it from prototype to a deployed quality-control system while working with their CEO and CTO to integrate AI into their business.
+  start: 2024-11
+  end: 2026-07
+  status: self-reported
+  sources: []
+- id: ai-safety-pivot
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  title: Full-time transition into AI safety
+  summary: Research sprints, AI safety coursework, and community organizing in Madison.
+  start: 2026-07
+  end: ''
+  color: t5
+  status: self-reported
+  sources: []
+- id: high-school
+  chapter: foundations
+  category: education
+  title: McFarland High School
+  tags:
+  - leadership
+  summary: Academic letter, AP courses, the Metals 1–3 sequence, and a youth apprenticeship in electrical engineering senior year.
+  start: 2017-09
+  end: 2021-06
+  color: t3
+  status: self-reported
+  sources: []
+- id: layterms
+  chapter: now
+  category: advocacy
+  shade: c-adv-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - field-building
+  - entrepreneurship
+  title: Layterms, a nonpartisan walk-through museum of AI
+  summary: My grassroots AI safety education project, alongside organizing with ControlAI Wisconsin and AISAP. I'm building Layterms for everyday voters. It has plain-language rooms on AGI, forecasting, how AI is trained, compute, and verifying secret AI projects, interactive toy models, and a vote on two real proposals in Congress.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Layterms
+    url: https://layterms.org/
+- id: spartan-embroidery
+  chapter: foundations
+  category: club
+  tags:
+  - leadership
+  - entrepreneurship
+  tracks:
+  - high-school
+  title: Ran embroidery at Spartan Manufacturing
+  summary: Taught myself the student business's CNC embroidery machine, then trained and led a three-person team producing hats and beanies for sale.
+  start: 2019-09
+  end: 2020-06
+  status: self-reported
+  sources:
+  - label: Spartan Manufacturing store
+    url: https://spartan.market/
+- id: lens-academy
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - advocacy
+  - field-building
+  title: Lens Academy, learner and volunteer coach and course builder
+  summary: Took Lens Academy's intensives as a learner and earned two expert-tier certificates. I now volunteer with Lens, unpaid. After earning the expert tier in its Facilitator Training Program, I'm coaching a group in the AI Control October 2026 Intensive and building Lens Academy's Project Course.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Lens Academy
+    url: https://lensacademy.org/
+- id: arkin-gunderson
+  chapter: engineering
+  category: job
+  shade: c-job-deep
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Co-founder, Arkin & Gunderson LLC (TempVents)
+  summary: Co-founded an HVAC startup, a side venture alongside my main work, to improve air quality on construction sites. Our product, TempVents, is pre-launch. We've built an MVP that two early users are trying, and we're demoing it as we work toward bringing it to market. I owned product development end to end, from research, customer interviews, and user-centered design to technical drafting and rapid prototyping. I also built our React website and a 15-second video campaign, ran prior art searches, and wrote and filed a provisional patent application.
+  start: 2025-03
+  end: ''
+  status: self-reported
+  sources: []
+profiles:
+- id: founder
+  title: Founder
+  headline: Engineer and founder building for AI safety
+  subtitle: 'I start things and get them into people''s hands: an edge AI consulting company that put computer vision into production for a client, an HVAC tooling startup improving air quality on construction sites, and Layterms, a public education project on AI risk. Now I''m putting that founder experience to work on AI safety.
+
+    '
+  intros:
+    now: 'Since July 2026 I''ve worked on AI safety full time. As a founder, that means building Layterms for everyday voters, joining StartingBlock''s Level Set program, and grounding it all in my own safety research.
+
+      '
+    engineering: 'College is where I started building companies: Gundy Neural Designs, my edge AI consulting company, and Arkin & Gunderson, an HVAC tooling startup improving air quality on construction sites, plus founding and leading the Unload team.
+
+      '
+    foundations: 'Early practice in making things people pay for: running embroidery production for the school''s student business and a paid youth apprenticeship in product development.
+
+      '
+  include:
+  - ai-safety-pivot
+  - layterms
+  - run-the-lab
+  - level-set
+  - lens-academy
+  - lens-facilitator
+  - lens-ai-control-coaching
+  - apart-incident-response
+  - apart-digital-minds
+  - workshop-paper-2026
+  - tibetan-asr
+  - arkin-gunderson
+  - gnd
+  - heartland
+  - tech-exploration-lab
+  - fakenews
+  - uw-graduation
+  - ceete-lead
+  - credo
+  - spartan-embroidery

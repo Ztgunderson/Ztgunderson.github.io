@@ -1,0 +1,405 @@
+events:
+- id: ece-capstone
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: 2025-12
+  title: Best project award, ECE capstone (GPU section)
+  summary: Our team, FFTeam, rebuilt the FFT algorithm on the GPU in CUDA for real-time neural signal processing and won the instructors' choice award in the GPU Algorithm and System Design capstone.
+  status: sourced
+  sources:
+  - label: UW–Madison College of Engineering
+    url: https://engineering.wisc.edu/blog/27-ece-design-teams-participate-in-capstone-open-house/
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/ECE455
+- id: dc-cancer-advocacy
+  chapter: now
+  category: advocacy
+  tags:
+  - advocacy
+  - leadership
+  date: '2026-10-05'
+  title: Metastatic breast cancer advocacy in Washington, D.C.
+  summary: Went with my mother, who lives with metastatic breast cancer, to METAvivor's Stage IV Stampede and Summit. Together we met with two U.S. representatives and two U.S. senators about metastatic breast cancer research and care.
+  status: self-reported
+  sources:
+  - label: 'METAvivor: Stage IV Stampede & Summit 2026 (event)'
+    url: https://metavivor.org/events-campaigns/register-for-stage-iv-stampede-2026/
+- id: lens-compute-verification
+  chapter: now
+  category: ai-safety
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - advocacy
+  - governance
+  date: '2026-09-20'
+  title: Expert tier, Compute Verification 1 (Lens Academy)
+  summary: Earned the expert tier in Lens Academy's Compute Verification Intensive, September 2026 cohort.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/ZDHDeQ29cOoPtvfgjYK0yg
+- id: lens-ai-futures
+  chapter: now
+  category: ai-safety
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - advocacy
+  - governance
+  date: '2026-09-25'
+  title: 'Expert tier, AI Futures: Forecasting and Strategy (Lens Academy)'
+  summary: Earned the expert tier in AI forecasting and strategy in the SAIF Intensive, September 2026 cohort.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/jnDz9gzf7AJDgg7GK_EetQ
+- id: apart-digital-minds
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-14'
+  title: 'Apart Research sprint: Examining stance drifting in multi-turn agent interactions'
+  summary: Solo project at the Digital Minds Research Sprint. I proposed a protocol for measuring how an AI agent's self-reports drift over a single conversation, testing a tutor agent across eight turns with adversarial, neutral, and supportive simulated students.
+  status: sourced
+  sources:
+  - label: Project and reviews (Apart Research)
+    url: https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/stance-drift
+- id: apart-incident-response
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-09-11'
+  title: 'Apart Research sprint: Discovering honeypots from resampled behavior in evaluation'
+  summary: Solo project at the AI Incident Response Sprint. I tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning, then turned into honeypots. The main finding was that discovery is compute-bound; I released the adaptive search method for others to validate.
+  status: sourced
+  sources:
+  - label: Project and review (Apart Research)
+    url: https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/sirens_discovery
+- id: uw-graduation
+  chapter: engineering
+  category: education
+  tracks:
+  - uw
+  date: '2025-12-20'
+  title: Graduated from UW–Madison
+  summary: B.S. in Computer Engineering with the named option in Machine Learning and Data Science, with a second major in Computer Sciences.
+  status: self-reported
+  sources:
+  - label: About the ML and Data Science option
+    url: https://guide.wisc.edu/undergraduate/engineering/electrical-computer-engineering/computer-engineering-bs/computer-engineering-machine-learning-data-science-bs
+  - label: Why the department created it
+    url: https://engineering.wisc.edu/news/new-machine-learning-and-data-science-option-offers-ece-undergrads-in-demand-skills
+  - label: Computer Sciences major
+    url: https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/
+- id: waisi-scholars
+  chapter: engineering
+  category: ai-safety
+  tracks:
+  - waisi
+  tags:
+  - ai-safety
+  - technical
+  date: 2024-12
+  title: Finished WAISI's Technical AI Safety Fundamentals, joined the scholars reading group
+  summary: After the seven-week cohort, I moved into WAISI's weekly scholars reading group on AI safety research and stayed through graduation.
+  status: self-reported
+  sources: []
+- id: tibetan-asr
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-08-10'
+  title: 'Research poster, IFDS Research Expo: Domain and capacity in low-resource Tibetan speech recognition'
+  summary: 'My hunch was that a speech model trained on New Testament readings would fail the languages of other cultures. Meta''s MMS learned Tibetan almost entirely from scripture read by a single speaker. I benchmarked it, then fine-tuned it on a Jetson AGX Orin with a parameter-efficient adapter, using secular Tibetan news recordings from far more speakers than Meta used. Changing the training domain cut character error rate from 24.1% to 19.9% with no change to English. Full fine-tuning reached 16.0% but made English 0.96 points worse. Quantizing to INT4 barely mattered (0.2 points): the data was the limit, not the bit width.'
+  status: sourced
+  sources:
+  - label: Code (GitHub)
+    url: https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline
+- id: run-the-lab
+  chapter: now
+  category: advocacy
+  tracks:
+  - layterms
+  tags:
+  - advocacy
+  - ai-safety
+  - governance
+  - field-building
+  - entrepreneurship
+  date: '2026-09-25'
+  title: Run the Lab! – Game built for Layterms at Mangrove's Game Night hackathon
+  summary: Part of Layterms, my grassroots AI safety education project. I built this three-minute game at Mangrove's AI safety game hackathon. You play the CEO of an AI lab choosing between pushing capabilities and investing in alignment. Its three rounds show why labs race without rules, why rules fail without verification, and how hardware checks on AI chips can make holding back safe.
+  status: sourced
+  sources:
+  - label: Play it (Layterms)
+    url: https://labceo.layterms.org/
+  - label: Game Night hackathon (Mangrove)
+    url: https://mangrove.one/hackathon/game-night
+- id: bluedot-future-of-ai
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  - governance
+  tracks:
+  - ai-safety-pivot
+  date: '2026-07-23'
+  title: Future of AI (BlueDot Impact)
+  summary: Completed BlueDot Impact's Future of AI course in my first weeks working on AI safety full time, covering AI safety and ethics.
+  status: sourced
+  sources:
+  - label: Certificate
+    url: https://bluedot.org/certification?r=recQ33carRjA5jsbv
+- id: lens-ai-control-coaching
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-12'
+  title: Coaching Lens Academy's AI Control October Intensive
+  summary: Volunteer coach for a group in Lens Academy's AI Control intensive, five 90-minute sessions from Oct 12 to 16.
+  status: self-reported
+  sources: []
+- id: workshop-paper-2026
+  chapter: now
+  category: ai-safety
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - technical
+  date: '2026-10-01'
+  title: Submitted my first workshop paper
+  summary: Submitted a 4-page research paper to an AI safety workshop. It's under double-blind review, so I'll share the title, venue, and paper once decisions are out in mid-October.
+  status: self-reported
+  sources: []
+- id: capitol-advocacy
+  chapter: engineering
+  category: advocacy
+  tracks:
+  - uw
+  tags:
+  - advocacy
+  date: '2023-02-22'
+  title: UW Lobbying Day with ASM, Wisconsin State Capitol
+  summary: Took part in UW Lobbying Day with the Associated Students of Madison (ASM), UW–Madison's student government, meeting with state lawmakers as a student advocate. Students from across the UW System met with the governor, legislators from both parties, and members of the Joint Finance Committee.
+  status: sourced
+  sources:
+  - label: 'ASM news: UW Lobbying Day (Feb 22, 2023)'
+    url: https://kb.wisc.edu/asm/news.php?id=13030
+  - label: ASM
+    url: https://asm.wisc.edu/
+- id: lens-facilitator
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - lens-academy
+  tags:
+  - ai-safety
+  - field-building
+  date: '2026-10-10'
+  title: Expert tier, Facilitator Training Program (Lens Academy)
+  summary: Earned the expert tier in Lens Academy's Facilitator Training Program, which prepares volunteers to coach and facilitate its AI safety cohorts.
+  status: sourced
+  sources:
+  - label: Verified certificate
+    url: https://lensacademy.org/certificate/gKcU7WZ17YteH-zatvXJxg
+tracks:
+- id: uw
+  chapter: engineering
+  category: education
+  title: Computer engineering and computer sciences, UW–Madison
+  summary: Computer Engineering with the Machine Learning and Data Science option, with a second major in Computer Sciences.
+  start: 2021-09
+  end: 2025-12
+  color: t3
+  status: self-reported
+  sources: []
+- id: waisi
+  chapter: engineering
+  category: ai-safety
+  tags:
+  - ai-safety
+  - technical
+  tracks:
+  - uw
+  title: Wisconsin AI Safety Initiative (WAISI)
+  summary: Took WAISI's seven-week Technical AI Safety Fundamentals cohort in fall 2024, then joined its scholars reading group, meeting weekly to read AI safety research until I graduated.
+  start: 2024-10
+  end: 2025-12
+  status: sourced
+  sources:
+  - label: WAISI
+    url: https://waisi.org/
+  - label: About WAISI (UW Computer Sciences)
+    url: https://www.cs.wisc.edu/2025/03/13/waisi-presents-caip-advanced-ai-expo/
+- id: exact-sciences
+  chapter: engineering
+  category: internship
+  title: System software intern, Exact Sciences
+  summary: Built a C#/.NET calibration tool for computer vision quality control, automated FLIR camera settings, and wrote Python utilities for ResNet training, under FDA design controls.
+  start: 2023-05
+  end: 2023-08
+  color: t7
+  status: self-reported
+  sources: []
+- id: gnd
+  chapter: engineering
+  category: job
+  shade: c-gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Founder, Gundy Neural Designs LLC
+  summary: My edge AI consulting company. I help clients put AI to work on their own hardware, from production computer vision to integrating fast (System 1) and reasoning (System 2) language models into their existing workflows.
+  start: 2024-11
+  end: ''
+  status: sourced
+  sources:
+  - label: Gundy Neural Designs
+    url: https://gundyneuraldesigns.com/
+- id: heartland
+  chapter: engineering
+  category: job
+  tracks:
+  - gnd
+  tags:
+  - leadership
+  - entrepreneurship
+  title: Computer vision for Heartland Ag Tech (GND client)
+  summary: Led a production computer vision pipeline for Heartland Ag Tech's potato line, taking it from prototype to a deployed quality-control system while working with their CEO and CTO to integrate AI into their business.
+  start: 2024-11
+  end: 2026-07
+  status: self-reported
+  sources: []
+- id: ai-safety-pivot
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  title: Full-time transition into AI safety
+  summary: Research sprints, AI safety coursework, and community organizing in Madison.
+  start: 2026-07
+  end: ''
+  color: t5
+  status: self-reported
+  sources: []
+- id: controlai-wi
+  chapter: now
+  category: advocacy
+  shade: c-adv-deep
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - governance
+  title: ControlAI Wisconsin action group
+  summary: Member of ControlAI's Wisconsin citizens' group, which meets to track local AI news and take action with state and federal representatives on AI safety.
+  start: 2026-09
+  end: ''
+  color: t1
+  status: sourced
+  sources:
+  - label: ControlAI Wisconsin group
+    url: https://act.controlai.org/groups/controlai-citizens-wisconsin
+- id: layterms
+  chapter: now
+  category: advocacy
+  shade: c-adv-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - advocacy
+  - ai-safety
+  - field-building
+  - entrepreneurship
+  title: Layterms, a nonpartisan walk-through museum of AI
+  summary: My grassroots AI safety education project, alongside organizing with ControlAI Wisconsin and AISAP. I'm building Layterms for everyday voters. It has plain-language rooms on AGI, forecasting, how AI is trained, compute, and verifying secret AI projects, interactive toy models, and a vote on two real proposals in Congress.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Layterms
+    url: https://layterms.org/
+- id: lens-academy
+  chapter: now
+  category: ai-safety
+  shade: c-ai-light
+  tracks:
+  - ai-safety-pivot
+  tags:
+  - ai-safety
+  - advocacy
+  - field-building
+  title: Lens Academy, learner and volunteer coach and course builder
+  summary: Took Lens Academy's intensives as a learner and earned two expert-tier certificates. I now volunteer with Lens, unpaid. After earning the expert tier in its Facilitator Training Program, I'm coaching a group in the AI Control October 2026 Intensive and building Lens Academy's Project Course.
+  start: 2026-09
+  end: ''
+  status: sourced
+  sources:
+  - label: Lens Academy
+    url: https://lensacademy.org/
+profiles:
+- id: safety-gov
+  title: Technical governance
+  headline: Engineer working on technical AI governance
+  subtitle: 'I''ve deployed AI on real hardware, and now I work on how to verify and govern it: training in compute verification and AI forecasting, evaluation research on how AI agents behave, and organizing with lawmakers on AI policy.
+
+    '
+  intros:
+    now: 'Since July 2026 I''ve worked on AI safety full time, with a focus on technical governance: compute verification and AI futures training, evaluation research, coaching others through AI Control, and organizing on AI policy in Wisconsin.
+
+      '
+    engineering: 'The technical grounding: GPU computing, regulated medical-device software, production computer vision, and my start in AI safety through WAISI. Plus my first time advocating to lawmakers at the Wisconsin State Capitol.
+
+      '
+  include:
+  - ai-safety-pivot
+  - lens-academy
+  - lens-compute-verification
+  - lens-ai-futures
+  - lens-facilitator
+  - lens-ai-control-coaching
+  - bluedot-future-of-ai
+  - controlai-wi
+  - run-the-lab
+  - dc-cancer-advocacy
+  - apart-incident-response
+  - apart-digital-minds
+  - workshop-paper-2026
+  - tibetan-asr
+  - gnd
+  - heartland
+  - ece-capstone
+  - exact-sciences
+  - waisi
+  - waisi-scholars
+  - capitol-advocacy
+  - uw-graduation

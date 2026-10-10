@@ -3,11 +3,11 @@ layout: default
 title: Technical governance
 profile: safety-gov
 permalink: /safety-gov/
+description: "Engineer working on technical AI governance: compute verification and AI forecasting training, evaluation research, and AI policy organizing."
 ---
 {% assign p = site.data.profiles | where: "id", page.profile | first %}
 <section class="intro">
   <h1>{{ p.headline }}</h1>
   <p>{{ p.subtitle }}</p>
-  <p class="full-link"><a href="{{ '/full/' | relative_url }}">See my full timeline →</a></p>
 </section>
 {% include timeline.html tag="" profile=page.profile %}

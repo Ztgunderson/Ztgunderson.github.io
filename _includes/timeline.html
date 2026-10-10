@@ -1,13 +1,14 @@
 <ul class="legend" aria-label="Color key">{% for c in site.data.categories %}<li><i style="--c: var(--{{ c.color }})"></i>{{ c.label }}</li>{% endfor %}</ul>
 <div id="tl" class="tl" data-placeholders="false" data-tag="{{ include.tag }}" data-profile="{{ include.profile }}"></div>
+{% if include.profile and include.profile != "" %}{% assign v = site.data.views[include.profile] %}{% assign evs = v.events %}{% assign trs = v.tracks %}{% assign profs = v.profiles %}{% else %}{% assign evs = site.data.timeline %}{% assign trs = site.data.tracks %}{% assign profs = "" | split: "" %}{% endif %}
 <script id="tl-data" type="application/json">
 {"today": "{{ site.time | date: '%Y-%m' }}",
  "chapters": {{ site.data.chapters | jsonify }},
  "streams": {{ site.data.streams | jsonify }},
- "profiles": {{ site.data.profiles | jsonify }},
+ "profiles": {{ profs | jsonify }},
  "categories": {{ site.data.categories | jsonify }},
- "tracks": {{ site.data.tracks | jsonify }},
- "events": {{ site.data.timeline | jsonify }}}
+ "tracks": {{ trs | jsonify }},
+ "events": {{ evs | jsonify }}}
 </script>
 <script src="{{ '/assets/timeline.js' | relative_url }}"></script>
 <noscript><p>Turn on JavaScript to see the timeline.</p></noscript>
