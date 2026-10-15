@@ -16,7 +16,6 @@ description: ""  # your words; blank falls back to _config.yml description
   <p class="jump">
     <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety</a>
     {% if titled.size > 0 %}<a href="#projects">Projects</a>{% endif %}
-    <a href="#contact">Connect</a>
     {% assign live_posts = site.data.writing | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help</a>{% endif %}
     <a href="{{ '/full/' | relative_url }}">Full timeline</a>
