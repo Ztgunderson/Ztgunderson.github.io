@@ -1,0 +1,29 @@
+# "Physical AI safety: start here" hub (modelled on Neel Nanda's Mechanistic Interpretability page).
+# YOUR WORDS: intro, each "note" (one line: why read it / what you took from it), open_questions.
+# Reading entries are verified links; reorder or cut freely. Blank fields are hidden.
+
+intro: ""   # 2-3 sentences: what physical AI safety is, and the angle you take on it.
+
+reading:
+  - group: Start here
+    items:
+      - { title: "Rethinking Safety for Generalist Robots (Sinha, Dixit, Tian, Majumdar, Bajcsy, 2026)", url: "https://arxiv.org/abs/2609.06326", note: "" }
+      - { title: "The Case for Physical AI Safety (PAISI white paper, 2026)", url: "https://paisi.ai/the-case-for-physical-ai-safety", note: "" }
+      - { title: "Refuses in Chat, Complies with Arms: RoboHarm (Robocurve, 2026)", url: "https://arxiv.org/abs/2610.14043", note: "" }
+  - group: Attacks and misuse
+    items:
+      - { title: "Jailbreaking LLM-Controlled Robots: RoboPAIR (Robey et al., 2024)", url: "https://arxiv.org/abs/2410.13691", note: "" }
+      - { title: "Generating Robot Constitutions & Benchmarks for Semantic Safety: ASIMOV (Sermanet et al., 2025)", url: "https://arxiv.org/abs/2503.08663", note: "" }
+  - group: Control, monitoring and evaluation
+    items:
+      - { title: "AI Control: Improving Safety Despite Intentional Subversion (Greenblatt et al., 2023)", url: "https://arxiv.org/abs/2312.06942", note: "" }
+      - { title: "Large Language Models Often Know When They Are Being Evaluated (Needham et al., 2025)", url: "https://arxiv.org/abs/2505.23836", note: "" }
+      - { title: "Inspect Robots: evaluating embodied agents (Robocurve, 2026)", url: "https://arxiv.org/abs/2610.06306", note: "" }
+
+# Questions you think are open and want people to work on (your words, one line each).
+open_questions: []
+
+# Where to go next: programs and venues.
+community:
+  - { title: "PAISI (Physical AI Safety Institute)", url: "https://paisi.ai/" }
+  - { title: "SPAIS workshop @ CoRL 2026", url: "https://spais-ws.org/" }

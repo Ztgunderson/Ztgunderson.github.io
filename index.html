@@ -7,8 +7,10 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
 <section class="intro">
   <h1>{{ h.headline }}</h1>
   {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
+  {% if h.scope.sentence != "" %}<p class="scope-line">{{ h.scope.sentence }}</p>{% endif %}
   {% if h.pitch != "" %}<p>{{ h.pitch }}</p>{% endif %}
   <p class="jump">
+    <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI safety: start here</a>
     <a href="#projects">Projects</a>
     {% assign live_posts = site.data.writing | where_exp: "w", "w.url != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help</a>{% endif %}
@@ -16,10 +18,41 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
   </p>
 </section>
 
-{% if h.scope.sentence != "" or h.scope.in.size > 0 %}
+{% if h.now.text != "" %}
+<aside class="now" aria-label="Now">
+  <strong>Now</strong> {{ h.now.text }}{% if h.now.link_url != "" %} <a href="{{ h.now.link_url }}">{{ h.now.link_label | default: "More" }}</a>{% endif %}
+</aside>
+{% endif %}
+
+{% if live_posts.size > 0 %}
+<section class="home-sec" id="writing">
+  <h2>Writing</h2>
+  <ul class="writing">
+  {% for w in live_posts %}<li><a href="{{ w.url }}">{{ w.title }}</a> <span class="muted">{{ w.section }}{% if w.date != "" %} · {{ w.date }}{% endif %}</span>{% if w.summary != "" %}<p class="post-sum">{{ w.summary }}</p>{% endif %}</li>
+  {% endfor %}
+  </ul>
+  <p class="card-links"><a href="{{ h.contact.substack }}">Subscribe on Substack</a></p>
+</section>
+{% endif %}
+
+<section class="home-sec" id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+  {% for p in site.data.projects %}{% if p.show %}
+    <article class="card">
+      <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
+      <h3>{{ p.title }}</h3>
+      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% else %}<p class="muted">Write-up coming.</p>{% endif %}
+      {% assign live = p.links | where_exp: "l", "l.url != ''" %}
+      {% if live.size > 0 %}<p class="card-links">{% for l in live %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+    </article>
+  {% endif %}{% endfor %}
+  </div>
+</section>
+
+{% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}
 <section class="home-sec" id="scope">
   <h2>Scope</h2>
-  {% if h.scope.sentence != "" %}<p>{{ h.scope.sentence }}</p>{% endif %}
   <div class="two-col">
     {% if h.scope.in.size > 0 %}<div><h3>Working on</h3><ul>{% for i in h.scope.in %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
     {% if h.scope.not_now.size > 0 %}<div><h3>Not right now</h3><ul>{% for i in h.scope.not_now %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
@@ -46,31 +79,6 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
     {% if t.change_my_mind != "" %}<li><strong>What would change my plan:</strong> {{ t.change_my_mind }}</li>{% endif %}
   </ul>
   {% endif %}
-</section>
-{% endif %}
-
-<section class="home-sec" id="projects">
-  <h2>Projects</h2>
-  <div class="cards">
-  {% for p in site.data.projects %}{% if p.show %}
-    <article class="card">
-      <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
-      <h3>{{ p.title }}</h3>
-      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% else %}<p class="muted">Write-up coming.</p>{% endif %}
-      {% assign live = p.links | where_exp: "l", "l.url != ''" %}
-      {% if live.size > 0 %}<p class="card-links">{% for l in live %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
-    </article>
-  {% endif %}{% endfor %}
-  </div>
-</section>
-
-{% if live_posts.size > 0 %}
-<section class="home-sec" id="writing">
-  <h2>Writing</h2>
-  <ul class="writing">
-  {% for w in live_posts %}<li><a href="{{ w.url }}">{{ w.title }}</a> <span class="muted">{{ w.section }}{% if w.date != "" %} · {{ w.date }}{% endif %}</span></li>
-  {% endfor %}
-  </ul>
 </section>
 {% endif %}
 

@@ -1,0 +1,52 @@
+---
+layout: default
+title: Physical AI safety, start here
+description: "A short, opinionated starting point for physical AI safety: what to read, open questions, and my work on it."
+permalink: /physical-ai-safety/
+---
+{% assign hub = site.data.hub %}
+<section class="intro">
+  <h1>Physical AI safety: start here</h1>
+  {% if hub.intro != "" %}<p>{{ hub.intro }}</p>{% endif %}
+</section>
+
+<section class="home-sec" id="reading">
+  <h2>What to read</h2>
+  {% for g in hub.reading %}
+  <h3>{{ g.group }}</h3>
+  <ul class="writing">
+    {% for r in g.items %}<li><a href="{{ r.url }}">{{ r.title }}</a>{% if r.note != "" %}<p class="post-sum">{{ r.note }}</p>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
+
+{% if hub.open_questions.size > 0 %}
+<section class="home-sec" id="open-questions">
+  <h2>Open questions</h2>
+  <ul>{% for q in hub.open_questions %}<li>{{ q }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% assign mine = site.data.projects | where_exp: "p", "p.show" | where_exp: "p", "p.area contains 'Physical'" %}
+{% if mine.size > 0 %}
+<section class="home-sec" id="my-work">
+  <h2>My work on this</h2>
+  <div class="cards">
+  {% for p in mine %}
+    <article class="card">
+      <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
+      <h3>{{ p.title }}</h3>
+      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% else %}<p class="muted">Write-up coming.</p>{% endif %}
+      {% assign live = p.links | where_exp: "l", "l.url != ''" %}
+      {% if live.size > 0 %}<p class="card-links">{% for l in live %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+    </article>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="home-sec" id="community">
+  <h2>Where to go next</h2>
+  <p class="card-links">{% for c in hub.community %}<a href="{{ c.url }}">{{ c.title }}</a>{% endfor %}</p>
+</section>

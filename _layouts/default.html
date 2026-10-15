@@ -22,7 +22,7 @@
   <header class="site-head">
     <a class="name" href="{% if page.profile %}{{ page.url | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ site.title }}</a>
     <nav>
-      {% unless page.profile %}<a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/full/' | relative_url }}">Timeline</a>{% endunless %}
+      {% unless page.profile %}<a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety</a><a href="{{ '/full/' | relative_url }}">Timeline</a>{% endunless %}
       <a href="{{ site.github_url }}" rel="me noopener">GitHub</a>
       <a href="{{ site.linkedin_url }}" rel="me noopener">LinkedIn</a>
     </nav>
