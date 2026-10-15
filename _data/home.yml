@@ -19,8 +19,11 @@ now:
 headline: ""
 
 # ~75 spoken words: problem -> what I do -> one proof ("first"/result) -> why me -> the ask.
-# Draft (AI-written, removed). Write your own ~75-word pitch.
-pitch: ""
+# 30-SECOND PITCH: three points, your words, ~25 words each (~75 spoken words total).
+pitch:
+  who_i_am: ""        # who you are (background, the proof that you build things)
+  scope: "Using edge based small trusted models to monitor misalignment or prevent misuse on cloud models and RFM in generalist robotic tasks."   # your Oct 15 one-liner v2, verbatim
+  how_i_can_help: ""  # one line; the full list is how_i_can_help below
 
 # Scope: one sentence on what you work on, then 2-4 short "in" and "not now" items.
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
@@ -39,6 +42,10 @@ theory_of_change:
   who_uses_it: ""    # a named kind of user (evaluators, robot integrators, ...)
   decision: ""       # the decision your artifact changes
   outcome: ""        # the mission outcome if it works
+  short_term: ""     # 0-6 months
+  medium_term: ""    # 6-24 months
+  long_term: ""      # 2+ years
+  path: ""           # programs/funding sequence, e.g. TAIS -> Rapid -> Career Transition -> PAISI
   least_sure: ""     # the assumption you trust least
   change_my_mind: "" # the result that would make you change plans
 

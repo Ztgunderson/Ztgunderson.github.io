@@ -10,14 +10,20 @@ description: ""  # your words; blank falls back to _config.yml description
   {% if h.photo != "" %}<img class="headshot" src="{{ h.photo | relative_url }}" alt="{{ site.title }}" width="140" height="140">{% endif %}
   <h1>{% if h.headline != "" %}{{ h.headline }}{% else %}{{ site.title }}{% endif %}</h1>
   {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
-  {% if h.pitch != "" %}<p class="pitch">{{ h.pitch }}</p>{% endif %}
-  {% if h.scope.sentence != "" %}<p class="scope-line">{{ h.scope.sentence }}</p>{% endif %}
+  {% if h.pitch.who_i_am != "" or h.pitch.scope != "" or h.pitch.how_i_can_help != "" %}
+  <dl class="pitch3">
+    {% if h.pitch.who_i_am != "" %}<dt>Who I am</dt><dd>{{ h.pitch.who_i_am }}</dd>{% endif %}
+    {% if h.pitch.scope != "" %}<dt>My scope</dt><dd>{{ h.pitch.scope }}</dd>{% endif %}
+    {% if h.pitch.how_i_can_help != "" %}<dt>How I can help you</dt><dd>{{ h.pitch.how_i_can_help }}</dd>{% endif %}
+  </dl>
+  {% endif %}
   {% if h.bio != "" %}<p class="bio">{{ h.bio }}</p>{% endif %}
   {% if h.cv_url != "" %}<p class="card-links"><a href="{{ h.cv_url }}">CV</a></p>{% endif %}
   <p class="jump">
     {% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}<a href="#scope">Scope</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help you</a>{% endif %}
     {% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
+    <a href="{{ '/theory-of-change/' | relative_url }}">Theory of change</a>
     <a href="#contact">Connect with me</a>
   </p>
 </section>
@@ -89,27 +95,7 @@ description: ""  # your words; blank falls back to _config.yml description
 
 
 
-{% assign t = h.theory_of_change %}
-{% if t.gap != "" or t.artifact != "" %}
-<section class="home-sec" id="theory-of-change">
-  <h2>Theory of change</h2>
-  <ol class="toc-chain">
-    {% if t.gap != "" %}<li><span>Gap</span>{{ t.gap }}</li>{% endif %}
-    {% if t.who_is_blind != "" %}<li><span>Who can't see it</span>{{ t.who_is_blind }}</li>{% endif %}
-    {% if t.artifact != "" %}<li><span>What I build</span>{{ t.artifact }}</li>{% endif %}
-    {% if t.who_uses_it != "" %}<li><span>Who uses it</span>{{ t.who_uses_it }}</li>{% endif %}
-    {% if t.decision != "" %}<li><span>Decision it changes</span>{{ t.decision }}</li>{% endif %}
-    {% if t.outcome != "" %}<li><span>Outcome</span>{{ t.outcome }}</li>{% endif %}
-  </ol>
-  {% if t.least_sure != "" or t.change_my_mind != "" %}
-  <h3>Where I could be wrong</h3>
-  <ul>
-    {% if t.least_sure != "" %}<li><strong>Least sure of:</strong> {{ t.least_sure }}</li>{% endif %}
-    {% if t.change_my_mind != "" %}<li><strong>What would change my plan:</strong> {{ t.change_my_mind }}</li>{% endif %}
-  </ul>
-  {% endif %}
-</section>
-{% endif %}
+
 
 
 

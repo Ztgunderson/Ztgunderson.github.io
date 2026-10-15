@@ -1,0 +1,50 @@
+---
+layout: default
+title: Theory of Change
+description: ""
+permalink: /theory-of-change/
+---
+{% assign h = site.data.home %}{% assign t = h.theory_of_change %}
+<section class="intro">
+  <h1>Theory of Change</h1>
+  {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
+</section>
+
+{% if t.gap != "" or t.who_is_blind != "" or t.artifact != "" or t.who_uses_it != "" or t.decision != "" or t.outcome != "" %}
+<section class="home-sec" id="chain">
+  <h2>The chain</h2>
+  <ol class="toc-chain">
+    {% if t.gap != "" %}<li><span>Gap</span>{{ t.gap }}</li>{% endif %}
+    {% if t.who_is_blind != "" %}<li><span>Who can't see it</span>{{ t.who_is_blind }}</li>{% endif %}
+    {% if t.artifact != "" %}<li><span>What I build</span>{{ t.artifact }}</li>{% endif %}
+    {% if t.who_uses_it != "" %}<li><span>Who uses it</span>{{ t.who_uses_it }}</li>{% endif %}
+    {% if t.decision != "" %}<li><span>Decision it changes</span>{{ t.decision }}</li>{% endif %}
+    {% if t.outcome != "" %}<li><span>Outcome</span>{{ t.outcome }}</li>{% endif %}
+  </ol>
+</section>
+{% endif %}
+
+{% if t.short_term != "" or t.medium_term != "" or t.long_term != "" %}
+<section class="home-sec" id="horizons">
+  <h2>Short, medium and long term</h2>
+  <dl class="pitch3">
+    {% if t.short_term != "" %}<dt>0–6 months</dt><dd>{{ t.short_term }}</dd>{% endif %}
+    {% if t.medium_term != "" %}<dt>6–24 months</dt><dd>{{ t.medium_term }}</dd>{% endif %}
+    {% if t.long_term != "" %}<dt>2+ years</dt><dd>{{ t.long_term }}</dd>{% endif %}
+  </dl>
+</section>
+{% endif %}
+
+{% if t.path != "" %}
+<section class="home-sec" id="path"><h2>Path</h2><p>{{ t.path }}</p></section>
+{% endif %}
+
+{% if t.least_sure != "" or t.change_my_mind != "" %}
+<section class="home-sec" id="wrong">
+  <h2>Where I could be wrong</h2>
+  <ul>
+    {% if t.least_sure != "" %}<li><strong>Least sure of:</strong> {{ t.least_sure }}</li>{% endif %}
+    {% if t.change_my_mind != "" %}<li><strong>What would change my plan:</strong> {{ t.change_my_mind }}</li>{% endif %}
+  </ul>
+</section>
+{% endif %}
