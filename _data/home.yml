@@ -26,8 +26,8 @@ pitch: ""
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
 # continual learning and automated data collection make traditional AI safety risks worse."
 scope:
-  # Your Oct 15 one-liner, verbatim.
-  sentence: "Using edge based small trusted models to monitor cloud models and RFM in generalist robotic tasks."
+  # Your Oct 15 one-liner, verbatim (v2).
+  sentence: "Using edge based small trusted models to monitor misalignment or prevent misuse on cloud models and RFM in generalist robotic tasks."
   in: []        # e.g. - "..."
   not_now: []   # your say-no list, e.g. - "..."
 

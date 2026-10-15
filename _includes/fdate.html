@@ -1,0 +1,1 @@
+{% assign d = include.d | append: "" %}{% if d.size == 7 %}{{ d | append: "-01" | date: "%b %Y" }}{% elsif d.size == 10 %}{{ d | date: "%b %-d, %Y" }}{% else %}{{ d }}{% endif %}

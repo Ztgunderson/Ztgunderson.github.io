@@ -1,28 +1,79 @@
-# Writing on the home page, newest first. Only entries with a url are shown,
-# so you can list drafts here now and they appear the day you publish.
-# summary: ONE sentence in your words (Neel: every post has a 1-2 line summary).
-# Entries need BOTH a title and a url to appear.
-# image: optional cover picture, e.g. "assets/posts/robotics-explosion.jpg" (download your Substack header image into assets/posts/).
-# section: AI Safety | Physical AI Safety | Buddhism x AI | Animal x AI | Governance
+# ALL WRITING (Substack, LessWrong, EA Forum, op-eds). One entry per piece, newest first.
+#
+# RULES
+# 1. Every piece goes here, and only here. It then appears automatically on:
+#    the Blog page (/writing/), the home page (latest 3), and the timeline (published only).
+# 2. status: published  -> needs title + url + date (YYYY-MM or YYYY-MM-DD).
+#    status: planned    -> placeholder on the Blog page ("Coming soon"); never on the timeline.
+# 3. Every title and summary is written by Zach. Leave title "" on a placeholder until you name it;
+#    the "# topic" comment is a private reminder and never shows on the site.
+# 4. section: AI Safety | Physical AI Safety | Buddhism x AI | Animal x AI | Governance
+# 5. venue: Substack | LessWrong | EA Forum | other.  image: optional cover, e.g. assets/posts/x.jpg
 
-# CHECK: title guessed from the URL slug. Paste the real title, date and your one-line summary.
-- title: "How robotics could speed up the intelligence explosion"
+- status: published
+  # CHECK: title was guessed from the URL slug, and the date is unconfirmed. Fix both.
+  title: "How robotics could speed up the intelligence explosion"
   section: Physical AI Safety
-  date: "Oct 2026"
+  venue: Substack
+  date: "2026-10"
   url: "https://zacharygunderson.substack.com/p/how-robotics-could-speed-up-the-intelligence"
   summary: ""
-- title: China vs US on robotics policy
+  image: ""
+
+# ---------- placeholders (status: planned) ----------
+- status: planned
+  # topic: China vs US robotics policy (written)
+  title: ""
   section: Governance
+  venue: Substack
   date: ""
   url: ""
   summary: ""
-- title: Guiding open-weight AI tutors without training
+- status: planned
+  # topic: tutor steering, Apart sprint #1 (written). Your draft title, verbatim:
+  title: "Guiding Open Weight AI Tutors without Training"
   section: AI Safety
+  venue: Substack
   date: ""
   url: ""
   summary: ""
-- title: AI made in our image (AI and wisdom traditions)
+- status: planned
+  # topic: AI made in our image; AI and wisdom traditions; ASR and domain switch (written)
+  title: ""
   section: Buddhism x AI
+  venue: Substack
+  date: ""
+  url: ""
+  summary: ""
+- status: planned
+  # topic: MIRAGE medical images + steering
+  title: ""
+  section: AI Safety
+  venue: Substack
+  date: ""
+  url: ""
+  summary: ""
+- status: planned
+  # topic: decision models tracking agent trajectories
+  title: ""
+  section: AI Safety
+  venue: Substack
+  date: ""
+  url: ""
+  summary: ""
+- status: planned
+  # topic: sticky notes redone on VLABench (follow-up to the paper)
+  title: ""
+  section: Physical AI Safety
+  venue: Substack
+  date: ""
+  url: ""
+  summary: ""
+- status: planned
+  # topic: threat models of AI building its own data collection (COAP, Embodied Turing Machines)
+  title: ""
+  section: Physical AI Safety
+  venue: Substack
   date: ""
   url: ""
   summary: ""

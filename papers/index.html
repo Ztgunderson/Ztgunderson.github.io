@@ -1,0 +1,13 @@
+---
+layout: default
+title: Papers
+description: ""
+permalink: /papers/
+---
+{% assign shown = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}
+<section class="intro"><h1>Papers</h1></section>
+<section class="home-sec">
+{% if shown.size > 0 %}
+  <ul class="writing papers">{% for p in shown %}{% include paper-item.html p=p %}{% endfor %}</ul>
+{% endif %}
+</section>

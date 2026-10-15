@@ -19,3 +19,9 @@
 - id: advocacy
   label: Advocacy and activism
   color: c-adv
+- id: writing
+  label: Writing
+  color: c-gnd
+- id: papers
+  label: Papers
+  color: c-job-deep

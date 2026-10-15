@@ -16,7 +16,7 @@ description: ""  # your words; blank falls back to _config.yml description
   <p class="jump">
     <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety</a>
     {% if titled.size > 0 %}<a href="#projects">Projects</a>{% endif %}
-    {% assign live_posts = site.data.writing | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
+    {% assign live_posts = site.data.writing | where: "status", "published" | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help</a>{% endif %}
     <a href="{{ '/full/' | relative_url }}">Full timeline</a>
     <a href="#contact">Connect with me</a>
@@ -32,11 +32,17 @@ description: ""  # your words; blank falls back to _config.yml description
 {% if live_posts.size > 0 %}
 <section class="home-sec" id="writing">
   <h2>Writing</h2>
-  <ul class="writing">
-  {% for w in live_posts %}<li{% if w.image != "" and w.image %} class="has-img"{% endif %}>{% if w.image != "" and w.image %}<a href="{{ w.url }}" tabindex="-1" aria-hidden="true"><img class="post-img" src="{{ w.image | relative_url }}" alt="" width="96" height="64"></a>{% endif %}<a href="{{ w.url }}">{{ w.title }}</a> <span class="muted">{{ w.section }}{% if w.date != "" %} · {{ w.date }}{% endif %}</span>{% if w.summary != "" %}<p class="post-sum">{{ w.summary }}</p>{% endif %}</li>
-  {% endfor %}
-  </ul>
+  <ul class="writing">{% for w in live_posts limit: 3 %}{% include post-item.html w=w %}{% endfor %}</ul>
+  <p class="card-links"><a href="{{ '/writing/' | relative_url }}">All writing</a></p>
   <p><a class="social-btn subscribe" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>
+</section>
+{% endif %}
+
+{% assign shown_papers = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}
+{% if shown_papers.size > 0 %}
+<section class="home-sec" id="papers">
+  <h2>Papers</h2>
+  <ul class="writing papers">{% for p in shown_papers %}{% include paper-item.html p=p %}{% endfor %}</ul>
 </section>
 {% endif %}
 

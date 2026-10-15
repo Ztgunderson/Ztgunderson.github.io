@@ -9,7 +9,9 @@
  "profiles": {{ profs | jsonify }},
  "categories": {{ site.data.categories | jsonify }},
  "tracks": {{ trs | jsonify }},
- "events": {{ evs | jsonify }}}
+ "events": {{ evs | jsonify }},
+ "writing": {{ site.data.writing | jsonify }},
+ "papers": {{ site.data.papers | jsonify }}}
 </script>
 <script src="{{ '/assets/timeline.js' | relative_url }}"></script>
 <noscript><p>Turn on JavaScript to see the timeline.</p></noscript>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+description: ""
+permalink: /writing/
+---
+{% assign live = site.data.writing | where: "status", "published" | where_exp: "w", "w.title != ''" | where_exp: "w", "w.url != ''" %}
+{% assign planned = site.data.writing | where: "status", "planned" %}
+<section class="intro"><h1>Blog</h1></section>
+
+{% assign sections = live | map: "section" | uniq %}
+{% for sec in sections %}
+<section class="home-sec">
+  <h2>{{ sec }}</h2>
+  <ul class="writing">{% for w in live %}{% if w.section == sec %}{% include post-item.html w=w %}{% endif %}{% endfor %}</ul>
+</section>
+{% endfor %}
+
+{% if planned.size > 0 %}
+<section class="home-sec" id="coming-soon">
+  <h2>Coming soon</h2>
+  <ul class="writing">{% for w in planned %}<li>{% if w.title != "" %}{{ w.title }}{% else %}<span class="muted">Untitled draft</span>{% endif %} <span class="muted">· {{ w.section }}</span></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+<p><a class="social-btn subscribe" href="{{ site.data.home.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>

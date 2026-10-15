@@ -1,0 +1,20 @@
+# PAPERS (workshop papers, preprints, reports, posters). Newest first.
+#
+# RULES
+# 1. Every paper goes here, and only here. It then appears automatically on:
+#    the Papers page (/papers/), the home page, and the timeline.
+# 2. show: false while under double-blind review or embargo. Nothing about it appears anywhere.
+#    When you flip it to true, delete the old "workshop-paper-2026" entry in timeline.yml so it isn't listed twice.
+# 3. status: under review | accepted | published | preprint | poster
+# 4. title and summary are yours (the paper's own title is fine).
+# 5. date: YYYY-MM or YYYY-MM-DD (submission or publication date).
+
+- show: false   # double-blind review: flip after the decision
+  title: ""
+  authors: ""
+  venue: ""      # e.g. SPAIS workshop @ CoRL 2026
+  status: under review
+  date: "2026-10-01"
+  pdf: ""
+  code: ""
+  summary: ""
