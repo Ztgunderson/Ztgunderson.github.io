@@ -1,6 +1,6 @@
 {% assign cur = include.current %}{% assign cur_s = site.data.streams | where: "id", cur | first %}{% assign group = cur_s.parent | default: cur %}
 <ul class="stream-tabs" aria-label="Focused views">
-  <li><a href="{{ '/' | relative_url }}"{% if cur == "" %} aria-current="page"{% endif %}>Full Timeline</a></li>
+  <li><a href="{{ '/full/' | relative_url }}"{% if cur == "" %} aria-current="page"{% endif %}>Full Timeline</a></li>
   {% for st in site.data.streams %}{% unless st.parent %}<li><a href="{{ '/streams/' | append: st.id | append: '/' | relative_url }}"{% if st.id == group %} aria-current="page"{% endif %}>{{ st.title }}</a></li>
   {% endunless %}{% endfor %}
 </ul>

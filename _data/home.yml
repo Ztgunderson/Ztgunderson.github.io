@@ -1,0 +1,45 @@
+# Research home page (/). YOUR WORDS go here.
+# Rule: any field left blank ("") is hidden on the site, so you can publish
+# with only some sections filled in. Prompts are in the comments above each field.
+
+# One sentence, outcome first: [what you do] + [for whom] + [toward which outcome].
+# Strong examples name a specific threat (Apollo: "reducing risks from scheming frontier AI").
+# Currently your own Oct 14 draft sentence, verbatim. Edit or replace it.
+mission: "Make sure edge robots are monitored, because continual learning and automated data collection make traditional AI safety risks worse."
+
+# The headline people see first (max ~10 words). Current site headline kept for now.
+headline: "Edge AI engineer working on AI safety"
+
+# ~75 spoken words: problem -> what I do -> one proof ("first"/result) -> why me -> the ask.
+pitch: "Computer engineer from UW–Madison who shipped a production computer vision system, now working full time on AI safety: how models behave once they leave the lab and run at the edge."
+
+# Scope: one sentence on what you work on, then 2-4 short "in" and "not now" items.
+# Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
+# continual learning and automated data collection make traditional AI safety risks worse."
+scope:
+  sentence: ""
+  in: []        # e.g. - "..."
+  not_now: []   # your say-no list, e.g. - "..."
+
+# Theory of change. One line each. Blank lines are hidden.
+theory_of_change:
+  gap: ""            # "Nobody measures whether ___"
+  who_is_blind: ""   # who can't see the risk today
+  artifact: ""       # what you build
+  who_uses_it: ""    # a named kind of user (evaluators, robot integrators, ...)
+  decision: ""       # the decision your artifact changes
+  outcome: ""        # the mission outcome if it works
+  least_sure: ""     # the assumption you trust least
+  change_my_mind: "" # the result that would make you change plans
+
+# How I can help: concrete offers, each one line. (Khullani's ask.)
+how_i_can_help: []
+# What I'm looking for: roles, collaborators, mentors, funding. Each one line.
+looking_for: []
+
+contact:
+  email: ""   # leave blank to hide; a role address is fine
+  substack: "https://substack.com/@zacharygunderson"
+  lesswrong: "https://www.lesswrong.com/users/zachary-gunderson"
+  linkedin: "https://www.linkedin.com/in/zachary-gunderson/"
+  github: "https://github.com/Ztgunderson"

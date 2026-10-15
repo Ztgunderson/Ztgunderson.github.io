@@ -196,3 +196,27 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 
 /* Focused landing pages */
 .intro p.full-link { margin-top: 1rem; font-size: 1rem; }
+
+/* Research home page */
+.intro .mission { color: var(--ink); font-size: 1.3rem; font-weight: 500; margin: 0 0 0.75rem; }
+.intro .jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; margin-top: 1.25rem; font-weight: 500; }
+.home-sec { padding-top: 2.75rem; }
+.home-sec h2 { font-family: "Barlow Condensed", "Barlow", sans-serif; font-weight: 600; font-size: 1.15rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; }
+.home-sec h3 { font-size: 1.05rem; margin: 0.5rem 0 0.4rem; }
+.home-sec ul { padding-left: 1.2rem; margin: 0.25rem 0; }
+.home-sec li { margin: 0.3rem 0; }
+.two-col { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.toc-chain { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+.toc-chain li { position: relative; padding: 0.55rem 0 0.55rem 1.4rem; border-left: 2px solid var(--blue-wash); }
+.toc-chain li::before { content: ""; position: absolute; left: -6px; top: 0.95rem; width: 10px; height: 10px; border-radius: 50%; background: var(--blue); }
+.toc-chain li span { display: block; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--blue); }
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+.card { border: 1px solid var(--rule); border-radius: 6px; padding: 1rem 1.1rem; background: color-mix(in srgb, var(--paper) 92%, var(--blue-wash)); }
+.card h3 { margin: 0.2rem 0 0.5rem; font-size: 1.05rem; line-height: 1.3; }
+.card p { margin: 0.4rem 0; font-size: 0.97rem; }
+.card-meta { font-size: 0.85rem !important; color: var(--muted); margin: 0 !important; }
+.card-meta .status { text-transform: capitalize; }
+.card-links { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; font-weight: 500; }
+.muted { color: var(--muted); }
+.writing { list-style: none; padding: 0 !important; }
+.writing li { padding: 0.35rem 0; border-bottom: 1px solid var(--rule); }

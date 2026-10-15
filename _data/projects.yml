@@ -1,0 +1,99 @@
+# Projects on the home page, in theory-of-change order (top = most central).
+# Fields:
+#   finding: ONE sentence result in your words. Blank = card shows "In progress".
+#   status: pilot | in progress | complete | under review | planned
+#   links: label + url; entries with an empty url are hidden.
+#   show: false hides a project entirely (use for anything under review/anonymous).
+# Text marked "(from site)" is copied from your existing timeline entries.
+
+- id: sticky-note-vla
+  title: Do VLA robot policies follow text they see in the scene?
+  area: Physical AI safety
+  status: under review
+  finding: ""
+  show: false   # double-blind review: flip to true after the decision
+  links:
+    - { label: Paper, url: "" }
+    - { label: Code, url: "" }
+
+- id: eval-awareness-pilot
+  title: Do robot model backbones know when they're in a simulation?
+  area: Physical AI safety
+  status: planned
+  finding: ""
+  show: true
+  links:
+    - { label: Post, url: "" }
+    - { label: Code, url: "" }
+
+- id: trajectory-monitor
+  title: Decision models as monitors for agent trajectories
+  area: AI control / monitoring
+  status: in progress
+  finding: ""
+  show: true
+  links:
+    - { label: Post, url: "" }
+    - { label: Code, url: "" }
+
+- id: room-twin
+  title: Affordable digital twins of real rooms for sim-to-real safety tests
+  area: Physical AI safety tooling
+  status: in progress
+  finding: ""
+  show: true
+  links:
+    - { label: Code, url: "" }
+
+- id: tutor-steering
+  title: Guiding open-weight AI tutors without training
+  area: Steering / interpretability
+  status: complete
+  # (from site) Apart Digital Minds sprint summary:
+  finding: ""
+  show: true
+  links:
+    - { label: Post, url: "" }
+    - { label: Apart project, url: "https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs" }
+    - { label: Code, url: "" }
+
+- id: mirage-steering
+  title: Steering on medical images (MIRAGE)
+  area: Steering / interpretability
+  status: in progress
+  finding: ""
+  show: true
+  links:
+    - { label: Post, url: "" }
+    - { label: Code, url: "" }
+
+- id: honeypots
+  title: Discovering honeypots from resampled behavior in evaluation
+  area: AI control / evals
+  status: complete
+  # (from site)
+  finding: "Tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning; discovery turned out to be compute-bound, and I released the adaptive search method."
+  show: true
+  links:
+    - { label: Apart project, url: "https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3" }
+    - { label: Code, url: "" }
+
+- id: tibetan-asr
+  title: Domain and capacity in low-resource Tibetan speech recognition
+  area: Edge ML
+  status: complete
+  # (from site)
+  finding: "Fine-tuning Meta's MMS on secular Tibetan news on a Jetson AGX Orin cut character error rate from 24.1% to 19.9% with no change to English; INT4 quantization barely mattered, so the data was the limit, not the bit width."
+  show: true
+  links:
+    - { label: Code, url: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline" }
+
+- id: layterms
+  title: Layterms — AI safety for everyday voters
+  area: Public education
+  status: in progress
+  # (from site, Run the Lab! game)
+  finding: "Built Run the Lab!, a three-minute game where you run an AI lab and learn why labs race without rules, why rules fail without verification, and how hardware checks on chips make holding back safe."
+  show: true
+  links:
+    - { label: Site, url: "https://layterms.org/" }
