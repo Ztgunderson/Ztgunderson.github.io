@@ -246,3 +246,6 @@ a.social-btn:hover { border-color: var(--blue); color: var(--blue); }
 .writing li.has-img > :not(:first-child) { grid-column: 2; }
 .post-img { grid-row: 1 / span 3; width: 96px; height: 64px; object-fit: cover; border-radius: 4px; }
 .paper-title { font-weight: 600; }
+.connect-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 2rem; }
+.connect-groups h3 { margin: 0 0 .2rem; font-size: .95rem; }
+.intro p.pitch { color: var(--ink); margin-top: .8rem; }

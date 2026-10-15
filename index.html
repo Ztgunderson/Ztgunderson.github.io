@@ -4,21 +4,20 @@ title: Home
 description: ""  # your words; blank falls back to _config.yml description
 ---
 {% assign h = site.data.home %}
+{% assign live_posts = site.data.writing | where: "status", "published" | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}
 {% assign titled = site.data.projects | where_exp: "p", "p.title != ''" %}
 <section class="intro{% if h.photo != "" %} has-photo{% endif %}">
   {% if h.photo != "" %}<img class="headshot" src="{{ h.photo | relative_url }}" alt="{{ site.title }}" width="140" height="140">{% endif %}
   <h1>{% if h.headline != "" %}{{ h.headline }}{% else %}{{ site.title }}{% endif %}</h1>
   {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
+  {% if h.pitch != "" %}<p class="pitch">{{ h.pitch }}</p>{% endif %}
   {% if h.scope.sentence != "" %}<p class="scope-line">{{ h.scope.sentence }}</p>{% endif %}
-  {% if h.pitch != "" %}<p>{{ h.pitch }}</p>{% endif %}
   {% if h.bio != "" %}<p class="bio">{{ h.bio }}</p>{% endif %}
   {% if h.cv_url != "" %}<p class="card-links"><a href="{{ h.cv_url }}">CV</a></p>{% endif %}
   <p class="jump">
-    <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety</a>
-    {% if titled.size > 0 %}<a href="#projects">Projects</a>{% endif %}
-    {% assign live_posts = site.data.writing | where: "status", "published" | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
-    {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help</a>{% endif %}
-    <a href="{{ '/full/' | relative_url }}">Full timeline</a>
+    {% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}<a href="#scope">Scope</a>{% endif %}
+    {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help you</a>{% endif %}
+    {% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
     <a href="#contact">Connect with me</a>
   </p>
 </section>
@@ -27,6 +26,31 @@ description: ""  # your words; blank falls back to _config.yml description
 <aside class="now" aria-label="Now">
   <strong>Now</strong> {{ h.now.text }}{% if h.now.link_url != "" %} <a href="{{ h.now.link_url }}">{{ h.now.link_label | default: "More" }}</a>{% endif %}
 </aside>
+{% endif %}
+
+{% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}
+<section class="home-sec" id="scope">
+  <h2>Scope</h2>
+  <div class="two-col">
+    {% if h.scope.in.size > 0 %}<div><h3>Working on</h3><ul>{% for i in h.scope.in %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
+    {% if h.scope.not_now.size > 0 %}<div><h3>Not right now</h3><ul>{% for i in h.scope.not_now %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}
+<section class="home-sec" id="help">
+  <div class="two-col">
+    {% if h.how_i_can_help.size > 0 %}<div><h2>How I can help you</h2><ul>{% for i in h.how_i_can_help %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
+    {% if h.looking_for.size > 0 %}<div><h2>What I'm looking for</h2><ul>{% for i in h.looking_for %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if h.audiences.size > 0 %}
+<section class="home-sec" id="work-with-me">
+  <dl class="audiences">{% for a in h.audiences %}<dt>{{ a.who }}</dt><dd>{{ a.how }}</dd>{% endfor %}</dl>
+</section>
 {% endif %}
 
 {% if live_posts.size > 0 %}
@@ -63,15 +87,7 @@ description: ""  # your words; blank falls back to _config.yml description
 </section>
 {% endif %}
 
-{% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}
-<section class="home-sec" id="scope">
-  <h2>Scope</h2>
-  <div class="two-col">
-    {% if h.scope.in.size > 0 %}<div><h3>Working on</h3><ul>{% for i in h.scope.in %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
-    {% if h.scope.not_now.size > 0 %}<div><h3>Not right now</h3><ul>{% for i in h.scope.not_now %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
-  </div>
-</section>
-{% endif %}
+
 
 {% assign t = h.theory_of_change %}
 {% if t.gap != "" or t.artifact != "" %}
@@ -95,31 +111,29 @@ description: ""  # your words; blank falls back to _config.yml description
 </section>
 {% endif %}
 
-{% if h.audiences.size > 0 %}
-<section class="home-sec" id="work-with-me">
-  <dl class="audiences">{% for a in h.audiences %}<dt>{{ a.who }}</dt><dd>{{ a.how }}</dd>{% endfor %}</dl>
-</section>
-{% endif %}
 
-{% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}
-<section class="home-sec" id="help">
-  <div class="two-col">
-    {% if h.how_i_can_help.size > 0 %}<div><h2>How I can help</h2><ul>{% for i in h.how_i_can_help %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
-    {% if h.looking_for.size > 0 %}<div><h2>What I'm looking for</h2><ul>{% for i in h.looking_for %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
-  </div>
-</section>
-{% endif %}
+
+
 
 <section class="home-sec" id="contact">
   <h2>Connect with me</h2>
   {% if h.short_bio != "" %}<p class="short-bio">{{ h.short_bio }}</p>{% endif %}
-  <ul class="social">
-    {% if h.contact.email != "" %}{% assign em = h.contact.email | split: "@" %}<li><span class="social-btn">{{ em[0] }} [at] {{ em[1] }}</span></li>{% endif %}
-    <li><a class="social-btn" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Substack</span></a></li>
-    <li><a class="social-btn" href="{{ h.contact.lesswrong }}">{% include icons/lesswrong.svg %}<span>LessWrong</span></a></li>
-    <li><a class="social-btn" href="{{ h.contact.linkedin }}">{% include icons/linkedin.svg %}<span>LinkedIn</span></a></li>
-    <li><a class="social-btn" href="{{ h.contact.github }}">{% include icons/github.svg %}<span>GitHub</span></a></li>
-    {% if h.contact.x != "" %}<li><a class="social-btn" href="{{ h.contact.x }}">{% include icons/x.svg %}<span>X</span></a></li>{% endif %}
-    {% if h.contact.youtube != "" %}<li><a class="social-btn" href="{{ h.contact.youtube }}">{% include icons/youtube.svg %}<span>YouTube</span></a></li>{% endif %}
-  </ul>
+  <div class="connect-groups">
+    <div><h3>Writing</h3><ul class="social">
+      <li><a class="social-btn" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Substack</span></a></li>
+      <li><a class="social-btn" href="{{ h.contact.lesswrong }}">{% include icons/lesswrong.svg %}<span>LessWrong</span></a></li>
+      <li><a class="social-btn" href="{{ '/writing/' | relative_url }}"><span>All writing</span></a></li>
+    </ul></div>
+    <div><h3>LinkedIn</h3><ul class="social">
+      <li><a class="social-btn" href="{{ h.contact.linkedin }}">{% include icons/linkedin.svg %}<span>LinkedIn</span></a></li>
+    </ul></div>
+    <div><h3>GitHub / code</h3><ul class="social">
+      <li><a class="social-btn" href="{{ h.contact.github }}">{% include icons/github.svg %}<span>GitHub</span></a></li>
+    </ul></div>
+    {% if h.contact.x != "" or h.contact.youtube != "" %}<div><h3>Video and posts</h3><ul class="social">
+      {% if h.contact.x != "" %}<li><a class="social-btn" href="{{ h.contact.x }}">{% include icons/x.svg %}<span>X</span></a></li>{% endif %}
+      {% if h.contact.youtube != "" %}<li><a class="social-btn" href="{{ h.contact.youtube }}">{% include icons/youtube.svg %}<span>YouTube</span></a></li>{% endif %}
+    </ul></div>{% endif %}
+    {% if h.contact.email != "" %}{% assign em = h.contact.email | split: "@" %}<div><h3>Email</h3><p>{{ em[0] }} [at] {{ em[1] }}</p></div>{% endif %}
+  </div>
 </section>
