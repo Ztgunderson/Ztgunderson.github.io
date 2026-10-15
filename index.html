@@ -33,10 +33,10 @@ description: ""  # your words; blank falls back to _config.yml description
 <section class="home-sec" id="writing">
   <h2>Writing</h2>
   <ul class="writing">
-  {% for w in live_posts %}<li><a href="{{ w.url }}">{{ w.title }}</a> <span class="muted">{{ w.section }}{% if w.date != "" %} · {{ w.date }}{% endif %}</span>{% if w.summary != "" %}<p class="post-sum">{{ w.summary }}</p>{% endif %}</li>
+  {% for w in live_posts %}<li{% if w.image != "" and w.image %} class="has-img"{% endif %}>{% if w.image != "" and w.image %}<a href="{{ w.url }}" tabindex="-1" aria-hidden="true"><img class="post-img" src="{{ w.image | relative_url }}" alt="" width="96" height="64"></a>{% endif %}<a href="{{ w.url }}">{{ w.title }}</a> <span class="muted">{{ w.section }}{% if w.date != "" %} · {{ w.date }}{% endif %}</span>{% if w.summary != "" %}<p class="post-sum">{{ w.summary }}</p>{% endif %}</li>
   {% endfor %}
   </ul>
-  <p class="card-links"><a href="{{ h.contact.substack }}">Subscribe on Substack</a></p>
+  <p><a class="social-btn subscribe" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>
 </section>
 {% endif %}
 
@@ -107,15 +107,13 @@ description: ""  # your words; blank falls back to _config.yml description
 <section class="home-sec" id="contact">
   <h2>Connect with me</h2>
   {% if h.short_bio != "" %}<p class="short-bio">{{ h.short_bio }}</p>{% endif %}
-  <p class="card-links">
-    {% if h.contact.email != "" %}{% assign em = h.contact.email | split: "@" %}<span>{{ em[0] }} [at] {{ em[1] }}</span>{% endif %}
-    <a href="{{ h.contact.substack }}">Substack</a>
-    {% if h.contact.x != "" %}<a href="{{ h.contact.x }}">X</a>{% endif %}
-    {% if h.contact.youtube != "" %}<a href="{{ h.contact.youtube }}">YouTube</a>{% endif %}
-    {% if h.contact.x != "" %}<a href="{{ h.contact.x }}">X</a>{% endif %}
-    {% if h.contact.youtube != "" %}<a href="{{ h.contact.youtube }}">YouTube</a>{% endif %}
-    <a href="{{ h.contact.lesswrong }}">LessWrong</a>
-    <a href="{{ h.contact.linkedin }}">LinkedIn</a>
-    <a href="{{ h.contact.github }}">GitHub</a>
-  </p>
+  <ul class="social">
+    {% if h.contact.email != "" %}{% assign em = h.contact.email | split: "@" %}<li><span class="social-btn">{{ em[0] }} [at] {{ em[1] }}</span></li>{% endif %}
+    <li><a class="social-btn" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Substack</span></a></li>
+    <li><a class="social-btn" href="{{ h.contact.lesswrong }}">{% include icons/lesswrong.svg %}<span>LessWrong</span></a></li>
+    <li><a class="social-btn" href="{{ h.contact.linkedin }}">{% include icons/linkedin.svg %}<span>LinkedIn</span></a></li>
+    <li><a class="social-btn" href="{{ h.contact.github }}">{% include icons/github.svg %}<span>GitHub</span></a></li>
+    {% if h.contact.x != "" %}<li><a class="social-btn" href="{{ h.contact.x }}">{% include icons/x.svg %}<span>X</span></a></li>{% endif %}
+    {% if h.contact.youtube != "" %}<li><a class="social-btn" href="{{ h.contact.youtube }}">{% include icons/youtube.svg %}<span>YouTube</span></a></li>{% endif %}
+  </ul>
 </section>

@@ -234,3 +234,14 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .bio { color: var(--ink) !important; font-size: 1rem !important; margin-top: .8rem !important; }
 .audiences dt { font-weight: 600; margin-top: .8rem; } .audiences dd { margin: .2rem 0 0; color: var(--muted); max-width: var(--measure); }
 .short-bio { max-width: var(--measure); color: var(--muted); }
+
+/* Labelled icon buttons */
+.social { list-style: none; padding: 0 !important; margin: .5rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.social-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .85rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink); text-decoration: none; font-weight: 500; background: var(--paper); }
+a.social-btn:hover { border-color: var(--blue); color: var(--blue); }
+.social-btn svg { flex: none; }
+.social-btn.subscribe { background: var(--blue); border-color: var(--blue); color: var(--paper); margin-top: .75rem; }
+.social-btn.subscribe:hover { color: var(--paper); opacity: .9; }
+.writing li.has-img { display: grid; grid-template-columns: 96px 1fr; column-gap: 1rem; align-items: start; }
+.writing li.has-img > :not(:first-child) { grid-column: 2; }
+.post-img { grid-row: 1 / span 3; width: 96px; height: 64px; object-fit: cover; border-radius: 4px; }

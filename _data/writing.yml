@@ -2,6 +2,7 @@
 # so you can list drafts here now and they appear the day you publish.
 # summary: ONE sentence in your words (Neel: every post has a 1-2 line summary).
 # Entries need BOTH a title and a url to appear.
+# image: optional cover picture, e.g. "assets/posts/robotics-explosion.jpg" (download your Substack header image into assets/posts/).
 # section: AI Safety | Physical AI Safety | Buddhism x AI | Animal x AI | Governance
 
 # CHECK: title guessed from the URL slug. Paste the real title, date and your one-line summary.
