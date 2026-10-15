@@ -59,37 +59,38 @@ description: ""  # your words; blank falls back to _config.yml description
 </section>
 {% endif %}
 
-{% if live_posts.size > 0 %}
+{% assign top_w = live_posts | where: "top", true %}
+{% assign top_p = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" | where: "top", true %}
+{% if top_w.size == 0 and top_p.size == 0 %}{% assign top_w = live_posts %}{% endif %}
+{% if top_w.size > 0 or top_p.size > 0 %}
 <section class="home-sec" id="writing">
   <h2>Writing</h2>
-  <ul class="writing">{% for w in live_posts limit: 3 %}{% include post-item.html w=w %}{% endfor %}</ul>
-  <p class="card-links"><a href="{{ '/writing/' | relative_url }}">All writing</a></p>
+  <ul class="writing">{% assign n = 0 %}
+    {% for p in top_p %}{% if n < 3 %}{% include paper-item.html p=p %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+    {% for w in top_w %}{% if n < 3 %}{% include post-item.html w=w %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+  </ul>
+  <p class="card-links"><a href="{{ '/writing/' | relative_url }}">All writing</a>{% assign np2 = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}{% if np2.size > 0 %}<a href="{{ '/papers/' | relative_url }}">All papers</a>{% endif %}</p>
   <p><a class="social-btn subscribe" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>
 </section>
 {% endif %}
 
-{% assign shown_papers = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}
-{% if shown_papers.size > 0 %}
-<section class="home-sec" id="papers">
-  <h2>Papers</h2>
-  <ul class="writing papers">{% for p in shown_papers %}{% include paper-item.html p=p %}{% endfor %}</ul>
-</section>
-{% endif %}
-
-{% if titled.size > 0 %}
+{% assign top_proj = site.data.projects | where: "top", true %}
+{% assign pc = 0 %}{% for p in top_proj %}{% if p.show %}{% if p.title != "" or p.repo != "" %}{% assign pc = pc | plus: 1 %}{% endif %}{% endif %}{% endfor %}
+{% if pc > 0 %}
 <section class="home-sec" id="projects">
   <h2>Projects</h2>
-  <div class="cards">
-  {% for p in site.data.projects %}{% if p.show and p.title != "" %}
+  <div class="cards">{% assign n = 0 %}
+  {% for p in top_proj %}{% if p.show and n < 3 %}{% if p.title != "" or p.repo != "" %}{% assign n = n | plus: 1 %}
+    {% assign repo_name = p.repo | split: "/" | last %}
     <article class="card">
       <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
-      <h3>{{ p.title }}</h3>
-      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% else %}<p class="muted">Write-up coming.</p>{% endif %}
-      {% assign live = p.links | where_exp: "l", "l.url != ''" %}
-      {% if live.size > 0 %}<p class="card-links">{% for l in live %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+      <h3>{% if p.title != "" %}{{ p.title }}{% else %}{{ repo_name }}{% endif %}</h3>
+      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% endif %}
+      <p class="card-links">{% if p.repo != "" %}<a class="repo-link" href="{{ p.repo }}">{% include icons/github.svg %} {{ repo_name }}</a>{% endif %}{% assign live = p.links | where_exp: "l", "l.url != ''" %}{% for l in live %}{% if l.url != p.repo %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}</p>
     </article>
-  {% endif %}{% endfor %}
+  {% endif %}{% endif %}{% endfor %}
   </div>
+  <p class="card-links"><a href="{{ h.contact.github }}">All code on GitHub</a></p>
 </section>
 {% endif %}
 

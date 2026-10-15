@@ -252,3 +252,5 @@ a.social-btn:hover { border-color: var(--blue); color: var(--blue); }
 .pitch3 { margin: 1rem 0 0; max-width: var(--measure); }
 .pitch3 dt { font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: .7rem; }
 .pitch3 dd { margin: .15rem 0 0; color: var(--ink); font-size: 1.05rem; }
+.repo-link { display: inline-flex; align-items: center; gap: .35rem; }
+.card h3, .card-links a { overflow-wrap: anywhere; }

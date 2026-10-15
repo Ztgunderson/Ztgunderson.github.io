@@ -7,6 +7,7 @@
 #    When you flip it to true, delete the old "workshop-paper-2026" entry in timeline.yml so it isn't listed twice.
 # 3. status: under review | accepted | published | preprint | poster
 # 4. title and summary are yours (the paper's own title is fine).
+# 6. top: true puts it in the home page "Writing" section (top 3 across writing + papers).
 # 5. date: YYYY-MM or YYYY-MM-DD (submission or publication date).
 
 - show: false   # double-blind review: flip after the decision
@@ -18,3 +19,4 @@
   pdf: ""
   code: ""
   summary: ""
+  top: true

@@ -1,4 +1,7 @@
-# RULE: every title and finding is written by Zach. Cards with a blank title are hidden.
+# RULE: every title and finding is written by Zach.
+# HOME PAGE shows the projects marked top: true (max 3), each linked to its GitHub repo.
+# repo: full GitHub URL. If title is blank, the card shows the repo's own name until you write a title.
+# Cards with no title and no repo are hidden.
 # Lines marked "draft (AI)" are reminders only; they never appear on the site.
 # Projects on the home page, in theory-of-change order (top = most central).
 # Fields:
@@ -9,6 +12,8 @@
 # Text marked "(from site)" is copied from your existing timeline entries.
 
 - id: sticky-note-vla
+  repo: ""
+  top: false
   # draft title (AI): Do VLA robot policies follow text they see in the scene?
   title: ""
   area: Physical AI safety
@@ -20,6 +25,8 @@
     - { label: Code, url: "" }
 
 - id: eval-awareness-pilot
+  repo: ""
+  top: false
   # draft title (AI): Do robot model backbones know when they're in a simulation?
   title: ""
   area: Physical AI safety
@@ -31,6 +38,8 @@
     - { label: Code, url: "" }
 
 - id: trajectory-monitor
+  repo: ""
+  top: false
   # draft title (AI): Decision models as monitors for agent trajectories
   title: ""
   area: AI control / monitoring
@@ -42,6 +51,8 @@
     - { label: Code, url: "" }
 
 - id: room-twin
+  repo: ""
+  top: false
   # draft title (AI): Affordable digital twins of real rooms for sim-to-real safety tests
   title: ""
   area: Physical AI safety tooling
@@ -52,6 +63,8 @@
     - { label: Code, url: "" }
 
 - id: tutor-steering
+  repo: "https://github.com/Ztgunderson/stance-drift"
+  top: true   # CHECK: stance-drift repo matched to this card (same Apart project link)
   # draft title (AI): Guiding open-weight AI tutors without training
   title: ""
   area: Steering / interpretability
@@ -65,6 +78,8 @@
     - { label: Code, url: "" }
 
 - id: mirage-steering
+  repo: ""
+  top: false
   # draft title (AI): Steering on medical images (MIRAGE)
   title: ""
   area: Steering / interpretability
@@ -76,6 +91,8 @@
     - { label: Code, url: "" }
 
 - id: honeypots
+  repo: "https://github.com/Ztgunderson/sirens_discovery"
+  top: true
   # draft title (AI): Discovering honeypots from resampled behavior in evaluation
   title: ""
   area: AI control / evals
@@ -89,6 +106,8 @@
     - { label: Code, url: "" }
 
 - id: tibetan-asr
+  repo: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline"
+  top: true
   # draft title (AI): Domain and capacity in low-resource Tibetan speech recognition
   title: ""
   area: Edge ML
@@ -101,6 +120,8 @@
     - { label: Code, url: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline" }
 
 - id: layterms
+  repo: ""
+  top: false
   # draft title (AI): Layterms — AI safety for everyday voters
   title: ""
   area: Public education

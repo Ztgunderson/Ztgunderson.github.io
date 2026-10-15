@@ -8,6 +8,7 @@
 # 3. Every title and summary is written by Zach. Leave title "" on a placeholder until you name it;
 #    the "# topic" comment is a private reminder and never shows on the site.
 # 4. section: AI Safety | Physical AI Safety | Buddhism x AI | Animal x AI | Governance
+# 6. top: true puts it in the home page "Writing" section (top 3 across writing + papers).
 # 5. venue: Substack | LessWrong | EA Forum | other.  image: optional cover, e.g. assets/posts/x.jpg
 
 - status: published
@@ -19,6 +20,7 @@
   url: "https://zacharygunderson.substack.com/p/how-robotics-could-speed-up-the-intelligence"
   summary: ""
   image: ""
+  top: true
 
 # ---------- placeholders (status: planned) ----------
 - status: planned
