@@ -226,3 +226,11 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .now strong { margin-right: 0.4rem; }
 .intro p.scope-line { color: var(--ink); font-size: 1.05rem; margin-top: 0.6rem; }
 .post-sum { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.95rem; }
+.ai-note { max-width: var(--measure); margin: 1.5rem 0 0; padding: .5rem .8rem; font-size: .9rem; color: var(--muted); border: 1px dashed var(--rule); border-radius: 4px; }
+.intro.has-photo { display: grid; grid-template-columns: 140px 1fr; column-gap: 1.5rem; }
+.intro.has-photo > :not(.headshot) { grid-column: 2; }
+.headshot { grid-row: 1 / span 6; border-radius: 50%; object-fit: cover; width: 140px; height: 140px; }
+@media (max-width: 600px) { .intro.has-photo { display: block; } .headshot { width: 96px; height: 96px; margin-bottom: 1rem; } }
+.bio { color: var(--ink) !important; font-size: 1rem !important; margin-top: .8rem !important; }
+.audiences dt { font-weight: 600; margin-top: .8rem; } .audiences dd { margin: .2rem 0 0; color: var(--muted); max-width: var(--measure); }
+.short-bio { max-width: var(--measure); color: var(--muted); }

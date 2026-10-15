@@ -1,3 +1,4 @@
+<p class="ai-note">This timeline was drafted with AI assistance from my records and sources.</p>
 <ul class="legend" aria-label="Color key">{% for c in site.data.categories %}<li><i style="--c: var(--{{ c.color }})"></i>{{ c.label }}</li>{% endfor %}</ul>
 <div id="tl" class="tl" data-placeholders="false" data-tag="{{ include.tag }}" data-profile="{{ include.profile }}"></div>
 {% if include.profile and include.profile != "" %}{% assign v = site.data.views[include.profile] %}{% assign evs = v.events %}{% assign trs = v.tracks %}{% assign profs = v.profiles %}{% else %}{% assign evs = site.data.timeline %}{% assign trs = site.data.tracks %}{% assign profs = "" | split: "" %}{% endif %}

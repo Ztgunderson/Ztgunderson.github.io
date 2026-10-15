@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Physical AI safety, start here
-description: "A short, opinionated starting point for physical AI safety: what to read, open questions, and my work on it."
+title: Physical AI Safety
+description: ""
 permalink: /physical-ai-safety/
 ---
 {% assign hub = site.data.hub %}
 <section class="intro">
-  <h1>Physical AI safety: start here</h1>
+  <h1>{% if hub.title != "" %}{{ hub.title }}{% else %}Physical AI safety{% endif %}</h1>
   {% if hub.intro != "" %}<p>{{ hub.intro }}</p>{% endif %}
 </section>
 
 <section class="home-sec" id="reading">
-  <h2>What to read</h2>
+  <h2>Reading</h2>
   {% for g in hub.reading %}
-  <h3>{{ g.group }}</h3>
+  {% if g.group != "" %}<h3>{{ g.group }}</h3>{% endif %}
   <ul class="writing">
     {% for r in g.items %}<li><a href="{{ r.url }}">{{ r.title }}</a>{% if r.note != "" %}<p class="post-sum">{{ r.note }}</p>{% endif %}</li>
     {% endfor %}
@@ -28,7 +28,7 @@ permalink: /physical-ai-safety/
 </section>
 {% endif %}
 
-{% assign mine = site.data.projects | where_exp: "p", "p.show" | where_exp: "p", "p.area contains 'Physical'" %}
+{% assign mine = site.data.projects | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" | where_exp: "p", "p.area contains 'Physical'" %}
 {% if mine.size > 0 %}
 <section class="home-sec" id="my-work">
   <h2>My work on this</h2>

@@ -15,10 +15,12 @@ now:
   link_url: ""
 
 # The headline people see first (max ~10 words). Current site headline kept for now.
-headline: "Edge AI engineer working on AI safety"
+# Draft (AI-written, removed): "Edge AI engineer working on AI safety". Blank = your name shows.
+headline: ""
 
 # ~75 spoken words: problem -> what I do -> one proof ("first"/result) -> why me -> the ask.
-pitch: "Computer engineer from UW–Madison who shipped a production computer vision system, now working full time on AI safety: how models behave once they leave the lab and run at the edge."
+# Draft (AI-written, removed). Write your own ~75-word pitch.
+pitch: ""
 
 # Scope: one sentence on what you work on, then 2-4 short "in" and "not now" items.
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
@@ -40,14 +42,29 @@ theory_of_change:
   least_sure: ""     # the assumption you trust least
   change_my_mind: "" # the result that would make you change plans
 
+# --- Patterns from Josiah Hanna's UW page (all your words) ---
+# Headshot: put the file at assets/headshot.jpg and set photo: "assets/headshot.jpg". Blank = hidden.
+photo: ""
+# First-person bio, ~3 sentences (Hanna opens with "I am ..."). Shown under the pitch.
+bio: ""
+# Third-person short bio for talk intros, Substack, programs (others can copy it). 3-5 sentences.
+short_bio: ""
+# CV link (PDF or Google Doc). Blank = hidden.
+cv_url: ""
+# One instruction per audience (Hanna separates PhD applicants vs undergrads).
+# e.g. - { who: "Researchers", how: "..." }  - { who: "Recruiters", how: "..." }  - { who: "Students / WAISI", how: "..." }
+audiences: []
+
 # How I can help: concrete offers, each one line. (Khullani's ask.)
 how_i_can_help: []
 # What I'm looking for: roles, collaborators, mentors, funding. Each one line.
 looking_for: []
 
 contact:
-  email: ""   # leave blank to hide; a role address is fine
-  substack: "https://substack.com/@zacharygunderson"
+  email: ""   # shown as "name [at] domain" to cut spam
+  substack: "https://zacharygunderson.substack.com/"
+  x: ""        # e.g. https://x.com/yourhandle (blank = hidden)
+  youtube: ""  # your channel URL (blank = hidden)
   lesswrong: "https://www.lesswrong.com/users/zachary-gunderson"
   linkedin: "https://www.linkedin.com/in/zachary-gunderson/"
   github: "https://github.com/Ztgunderson"

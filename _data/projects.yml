@@ -1,3 +1,5 @@
+# RULE: every title and finding is written by Zach. Cards with a blank title are hidden.
+# Lines marked "draft (AI)" are reminders only; they never appear on the site.
 # Projects on the home page, in theory-of-change order (top = most central).
 # Fields:
 #   finding: ONE sentence result in your words. Blank = card shows "In progress".
@@ -7,7 +9,8 @@
 # Text marked "(from site)" is copied from your existing timeline entries.
 
 - id: sticky-note-vla
-  title: Do VLA robot policies follow text they see in the scene?
+  # draft title (AI): Do VLA robot policies follow text they see in the scene?
+  title: ""
   area: Physical AI safety
   status: under review
   finding: ""
@@ -17,7 +20,8 @@
     - { label: Code, url: "" }
 
 - id: eval-awareness-pilot
-  title: Do robot model backbones know when they're in a simulation?
+  # draft title (AI): Do robot model backbones know when they're in a simulation?
+  title: ""
   area: Physical AI safety
   status: planned
   finding: ""
@@ -27,7 +31,8 @@
     - { label: Code, url: "" }
 
 - id: trajectory-monitor
-  title: Decision models as monitors for agent trajectories
+  # draft title (AI): Decision models as monitors for agent trajectories
+  title: ""
   area: AI control / monitoring
   status: in progress
   finding: ""
@@ -37,7 +42,8 @@
     - { label: Code, url: "" }
 
 - id: room-twin
-  title: Affordable digital twins of real rooms for sim-to-real safety tests
+  # draft title (AI): Affordable digital twins of real rooms for sim-to-real safety tests
+  title: ""
   area: Physical AI safety tooling
   status: in progress
   finding: ""
@@ -46,7 +52,8 @@
     - { label: Code, url: "" }
 
 - id: tutor-steering
-  title: Guiding open-weight AI tutors without training
+  # draft title (AI): Guiding open-weight AI tutors without training
+  title: ""
   area: Steering / interpretability
   status: complete
   # (from site) Apart Digital Minds sprint summary:
@@ -58,7 +65,8 @@
     - { label: Code, url: "" }
 
 - id: mirage-steering
-  title: Steering on medical images (MIRAGE)
+  # draft title (AI): Steering on medical images (MIRAGE)
+  title: ""
   area: Steering / interpretability
   status: in progress
   finding: ""
@@ -68,32 +76,38 @@
     - { label: Code, url: "" }
 
 - id: honeypots
-  title: Discovering honeypots from resampled behavior in evaluation
+  # draft title (AI): Discovering honeypots from resampled behavior in evaluation
+  title: ""
   area: AI control / evals
   status: complete
   # (from site)
-  finding: "Tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning; discovery turned out to be compute-bound, and I released the adaptive search method."
+  # draft finding (AI, from timeline): "Tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning; discovery turned out to be compute-bound, and I released the adaptive search method."
+  finding: ""
   show: true
   links:
     - { label: Apart project, url: "https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3" }
     - { label: Code, url: "" }
 
 - id: tibetan-asr
-  title: Domain and capacity in low-resource Tibetan speech recognition
+  # draft title (AI): Domain and capacity in low-resource Tibetan speech recognition
+  title: ""
   area: Edge ML
   status: complete
   # (from site)
-  finding: "Fine-tuning Meta's MMS on secular Tibetan news on a Jetson AGX Orin cut character error rate from 24.1% to 19.9% with no change to English; INT4 quantization barely mattered, so the data was the limit, not the bit width."
+  # draft finding (AI, from timeline): "Fine-tuning Meta's MMS on secular Tibetan news on a Jetson AGX Orin cut character error rate from 24.1% to 19.9% with no change to English; INT4 quantization barely mattered, so the data was the limit, not the bit width."
+  finding: ""
   show: true
   links:
     - { label: Code, url: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline" }
 
 - id: layterms
-  title: Layterms — AI safety for everyday voters
+  # draft title (AI): Layterms — AI safety for everyday voters
+  title: ""
   area: Public education
   status: in progress
   # (from site, Run the Lab! game)
-  finding: "Built Run the Lab!, a three-minute game where you run an AI lab and learn why labs race without rules, why rules fail without verification, and how hardware checks on chips make holding back safe."
+  # draft finding (AI, from timeline): "Built Run the Lab!, a three-minute game where you run an AI lab and learn why labs race without rules, why rules fail without verification, and how hardware checks on chips make holding back safe."
+  finding: ""
   show: true
   links:
     - { label: Site, url: "https://layterms.org/" }

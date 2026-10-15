@@ -1,20 +1,26 @@
 ---
 layout: default
 title: Home
-description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission, scope, theory of change, projects, writing, and how I can help."
+description: ""  # your words; blank falls back to _config.yml description
 ---
 {% assign h = site.data.home %}
-<section class="intro">
-  <h1>{{ h.headline }}</h1>
+{% assign titled = site.data.projects | where_exp: "p", "p.title != ''" %}
+<section class="intro{% if h.photo != "" %} has-photo{% endif %}">
+  {% if h.photo != "" %}<img class="headshot" src="{{ h.photo | relative_url }}" alt="{{ site.title }}" width="140" height="140">{% endif %}
+  <h1>{% if h.headline != "" %}{{ h.headline }}{% else %}{{ site.title }}{% endif %}</h1>
   {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
   {% if h.scope.sentence != "" %}<p class="scope-line">{{ h.scope.sentence }}</p>{% endif %}
   {% if h.pitch != "" %}<p>{{ h.pitch }}</p>{% endif %}
+  {% if h.bio != "" %}<p class="bio">{{ h.bio }}</p>{% endif %}
+  {% if h.cv_url != "" %}<p class="card-links"><a href="{{ h.cv_url }}">CV</a></p>{% endif %}
   <p class="jump">
-    <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI safety: start here</a>
-    <a href="#projects">Projects</a>
-    {% assign live_posts = site.data.writing | where_exp: "w", "w.url != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
+    <a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety</a>
+    {% if titled.size > 0 %}<a href="#projects">Projects</a>{% endif %}
+    <a href="#contact">Connect</a>
+    {% assign live_posts = site.data.writing | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}{% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help</a>{% endif %}
     <a href="{{ '/full/' | relative_url }}">Full timeline</a>
+    <a href="#contact">Connect with me</a>
   </p>
 </section>
 
@@ -35,10 +41,11 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
 </section>
 {% endif %}
 
+{% if titled.size > 0 %}
 <section class="home-sec" id="projects">
   <h2>Projects</h2>
   <div class="cards">
-  {% for p in site.data.projects %}{% if p.show %}
+  {% for p in site.data.projects %}{% if p.show and p.title != "" %}
     <article class="card">
       <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
       <h3>{{ p.title }}</h3>
@@ -49,6 +56,7 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
   {% endif %}{% endfor %}
   </div>
 </section>
+{% endif %}
 
 {% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}
 <section class="home-sec" id="scope">
@@ -82,6 +90,12 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
 </section>
 {% endif %}
 
+{% if h.audiences.size > 0 %}
+<section class="home-sec" id="work-with-me">
+  <dl class="audiences">{% for a in h.audiences %}<dt>{{ a.who }}</dt><dd>{{ a.how }}</dd>{% endfor %}</dl>
+</section>
+{% endif %}
+
 {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}
 <section class="home-sec" id="help">
   <div class="two-col">
@@ -92,10 +106,15 @@ description: "Zachary Gunderson: edge AI engineer working on AI safety. Mission,
 {% endif %}
 
 <section class="home-sec" id="contact">
-  <h2>Contact</h2>
+  <h2>Connect with me</h2>
+  {% if h.short_bio != "" %}<p class="short-bio">{{ h.short_bio }}</p>{% endif %}
   <p class="card-links">
-    {% if h.contact.email != "" %}<a href="mailto:{{ h.contact.email }}">Email</a>{% endif %}
+    {% if h.contact.email != "" %}{% assign em = h.contact.email | split: "@" %}<span>{{ em[0] }} [at] {{ em[1] }}</span>{% endif %}
     <a href="{{ h.contact.substack }}">Substack</a>
+    {% if h.contact.x != "" %}<a href="{{ h.contact.x }}">X</a>{% endif %}
+    {% if h.contact.youtube != "" %}<a href="{{ h.contact.youtube }}">YouTube</a>{% endif %}
+    {% if h.contact.x != "" %}<a href="{{ h.contact.x }}">X</a>{% endif %}
+    {% if h.contact.youtube != "" %}<a href="{{ h.contact.youtube }}">YouTube</a>{% endif %}
     <a href="{{ h.contact.lesswrong }}">LessWrong</a>
     <a href="{{ h.contact.linkedin }}">LinkedIn</a>
     <a href="{{ h.contact.github }}">GitHub</a>
