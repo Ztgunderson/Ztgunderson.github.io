@@ -17,7 +17,8 @@ pitch: "Computer engineer from UW–Madison who shipped a production computer vi
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
 # continual learning and automated data collection make traditional AI safety risks worse."
 scope:
-  sentence: ""
+  # Your Oct 15 one-liner, verbatim.
+  sentence: "Using edge based small trusted models to monitor cloud models and RFM in generalist robotic tasks."
   in: []        # e.g. - "..."
   not_now: []   # your say-no list, e.g. - "..."
 
