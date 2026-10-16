@@ -4,9 +4,11 @@
 
 # One sentence, outcome first: [what you do] + [for whom] + [toward which outcome].
 # Strong examples name a specific threat (Apollo: "reducing risks from scheming frontier AI").
-# Your Oct 16 mission, verbatim (spelling only). Previous (Oct 14): "Make sure edge robots are monitored, because continual
+# Your Oct 16 v2 mission, verbatim. Oct 16 v1: "Improving the transparency of Robotic Foundational Models through improving
+# monitoring methods and red team evaluations to build intervention methods and standards for Physical AI Control."
+# Previous (Oct 14): "Make sure edge robots are monitored, because continual
 # learning and automated data collection make traditional AI safety risks worse."
-mission: "Improving the transparency of Robotic Foundational Models through improving monitoring methods and red team evaluations to build intervention methods and standards for Physical AI Control."
+mission: "Developing monitoring methods and evaluations that mitigate the physical risks caused by robotic foundation models"
 
 # "Now" banner (Neel Nanda pins one call to action above everything). Your words.
 # e.g. what you're doing this month + one ask. Leave text blank to hide.
