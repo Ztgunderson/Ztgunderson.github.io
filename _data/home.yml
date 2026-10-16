@@ -27,7 +27,8 @@ pitch:
   # Shown as "What I do". Previous one-liner (Oct 15 v2): "Using edge based small trusted models to monitor misalignment or
   # prevent misuse on cloud models and RFM in generalist robotic tasks."
   scope: "I build agent monitoring methods and benchmark to improve AI oversight deployed in robotics and agent systems."
-  how_i_can_help: "Building evaluations to audit model behavior for creating policies, guiding robotic foundation models development, and contributing to open source monitoring methods and benchmarks for other scientist working in the field of Physical AI Safety."
+  # Oct 16 v2, your words (spelling fixes only: foudnation, creaing, polcies, evaultion).
+  how_i_can_help: "If you are building simulations to monitor robotic foundation models or agentic systems creating policies for robotic movements, I can help ensure AI safety test cases are monitored through system one auditing methods and better evaluation designs."
 
 # Scope: one sentence on what you work on, then 2-4 short "in" and "not now" items.
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
