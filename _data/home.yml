@@ -4,8 +4,9 @@
 
 # One sentence, outcome first: [what you do] + [for whom] + [toward which outcome].
 # Strong examples name a specific threat (Apollo: "reducing risks from scheming frontier AI").
-# Currently your own Oct 14 draft sentence, verbatim. Edit or replace it.
-mission: "Make sure edge robots are monitored, because continual learning and automated data collection make traditional AI safety risks worse."
+# Your Oct 16 mission, verbatim (spelling only). Previous (Oct 14): "Make sure edge robots are monitored, because continual
+# learning and automated data collection make traditional AI safety risks worse."
+mission: "Improving the transparency of Robotic Foundational Models through improving monitoring methods and red team evaluations to build intervention methods and standards for Physical AI Control."
 
 # "Now" banner (Neel Nanda pins one call to action above everything). Your words.
 # e.g. what you're doing this month + one ask. Leave text blank to hide.
@@ -21,9 +22,12 @@ headline: ""
 # ~75 spoken words: problem -> what I do -> one proof ("first"/result) -> why me -> the ask.
 # 30-SECOND PITCH: three points, your words, ~25 words each (~75 spoken words total).
 pitch:
-  who_i_am: ""        # who you are (background, the proof that you build things)
-  scope: "Using edge based small trusted models to monitor misalignment or prevent misuse on cloud models and RFM in generalist robotic tasks."   # your Oct 15 one-liner v2, verbatim
-  how_i_can_help: ""  # one line; the full list is how_i_can_help below
+  # Oct 16, your words verbatim (spelling fixes only: Transiioning -> Transitioning).
+  who_i_am: "Edge AI engineer working on Physical AI safety for Generalist Robotics. Track record of deploying computer vision projects in production. Transitioning into Cloud and Physical AI Safety through hackathons, workshop papers, and public code."
+  # Shown as "What I do". Previous one-liner (Oct 15 v2): "Using edge based small trusted models to monitor misalignment or
+  # prevent misuse on cloud models and RFM in generalist robotic tasks."
+  scope: "I build agent monitoring methods and benchmark to improve AI oversight deployed in robotics and agent systems."
+  how_i_can_help: "Building evaluations to audit model behavior for creating policies, guiding robotic foundation models development, and contributing to open source monitoring methods and benchmarks for other scientist working in the field of Physical AI Safety."
 
 # Scope: one sentence on what you work on, then 2-4 short "in" and "not now" items.
 # Your Oct 14 draft, to edit or replace: "Make sure edge robots are monitored, because
