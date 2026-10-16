@@ -11,6 +11,7 @@
 # 5. date: YYYY-MM or YYYY-MM-DD (submission or publication date).
 
 - show: false   # double-blind review: flip after the decision
+  placeholder: "SPAIS @ CoRL 2026 workshop submission (under double-blind review; title withheld)"   # shown on /papers/ while show is false
   title: ""
   authors: ""
   venue: ""      # e.g. SPAIS workshop @ CoRL 2026

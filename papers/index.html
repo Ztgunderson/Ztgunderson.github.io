@@ -10,4 +10,5 @@ permalink: /papers/
 {% if shown.size > 0 %}
   <ul class="writing papers">{% for p in shown %}{% include paper-item.html p=p %}{% endfor %}</ul>
 {% endif %}
+  {% assign ph = site.data.papers | where_exp: "p", "p.show != true" %}{% if ph.size > 0 %}<ul class="writing papers">{% for p in ph %}{% if p.placeholder %}<li class="muted">{{ p.placeholder }}</li>{% endif %}{% endfor %}</ul>{% endif %}
 </section>
