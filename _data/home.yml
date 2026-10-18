@@ -64,7 +64,7 @@ bio: ""
 # Third-person short bio for talk intros, Substack, programs (others can copy it). 3-5 sentences.
 short_bio: ""
 # CV link (PDF or Google Doc). Blank = hidden.
-cv_url: ""
+cv_url: "/assets/Gunderson_Zachary_CV.pdf"
 # One instruction per audience (Hanna separates PhD applicants vs undergrads).
 # e.g. - { who: "Researchers", how: "..." }  - { who: "Recruiters", how: "..." }  - { who: "Students / WAISI", how: "..." }
 audiences: []
