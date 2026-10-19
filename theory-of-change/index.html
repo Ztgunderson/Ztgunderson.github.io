@@ -24,6 +24,10 @@ permalink: /theory-of-change/
 </section>
 {% endif %}
 
+{% if t.scope != "" %}<section class="home-sec" id="scope"><h2>Scope</h2><p>{{ t.scope }}</p></section>{% endif %}
+{% if t.why_control != "" %}<section class="home-sec" id="why-control"><h2>Why control (for now)</h2><p>{{ t.why_control }}</p></section>{% endif %}
+{% if t.why_edge_cloud != "" %}<section class="home-sec" id="edge-cloud"><h2>Why edge and cloud</h2><p>{{ t.why_edge_cloud }}</p></section>{% endif %}
+
 {% if t.short_term != "" or t.medium_term != "" or t.long_term != "" %}
 <section class="home-sec" id="horizons">
   <h2>Short, medium and long term</h2>

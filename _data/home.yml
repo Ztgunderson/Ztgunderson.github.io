@@ -43,18 +43,22 @@ scope:
 
 # Theory of change. One line each. Blank lines are hidden.
 theory_of_change:
-  gap: ""            # "Nobody measures whether ___"
-  who_is_blind: ""   # who can't see the risk today
-  artifact: ""       # what you build
-  who_uses_it: ""    # a named kind of user (evaluators, robot integrators, ...)
-  decision: ""       # the decision your artifact changes
-  outcome: ""        # the mission outcome if it works
-  short_term: ""     # 0-6 months
-  medium_term: ""    # 6-24 months
-  long_term: ""      # 2+ years
-  path: ""           # programs/funding sequence, e.g. TAIS -> Rapid -> Career Transition -> PAISI
-  least_sure: ""     # the assumption you trust least
-  change_my_mind: "" # the result that would make you change plans
+  # Zach's words from the Theory of Change doc (Oct 16), spelling only. Blank = hidden.
+  gap: "Physical AI Safety has limited methods to detect rogue agents' trajectory of misuse or misalignment. Oversight monitoring methods detect mechanistic signals like linear probing or DNN modeling of internal activations. For predicting the semantics this can poorly be modeled with LSTM comparatively to LLM or decision model based approaches."
+  who_is_blind: ""
+  artifact: "I am addressing methods for monitoring the behavior through video streams and actions the robot describes, assuming the weights are black box, to have detection methods that do not rely solely on weights, but build upon quick lower tier weight monitoring mixed with more advanced higher tier trajectory understanding through video understanding. I build monitoring methods to consider the semantic understanding of the visual modality comparatively to the assigned task."
+  who_uses_it: "Policy/standard makers to know where robotics really is, and model trainers to be aware of the risks of what they are releasing. Which helps evaluations and standard makers better understand failure modes of these models."
+  decision: "Which can be used to decide standards and better training methods for aligning to the safety standards embodiment of AI needs. To hold people (creators) accountable and standards to make it enforceable."
+  outcome: ""
+  short_term: ""
+  medium_term: ""
+  long_term: "2027 aiming for my first fellowship at PAISI, and starting to establish a history of research papers in the space."
+  path: "Get into BlueDot ecosystem and EA through introductory programs; BlueDot governance class; project via Technical AI Safety sprint; working to get into the PAISI fellowship or other related fellowships (targeting technical benchmarks and oversight tooling/methods)."
+  least_sure: "RFM edge based approaches transition solely to frontier models hosted in the cloud with closed weights. This would prevent any mechanistic monitoring methods, and be limited in chain of thoughts if those cloud models are based on world models or VLA."
+  change_my_mind: "I would change my mind if cloud models stay ahead of robotic models as data bottlenecks and benchmarks improve. If these frontier LLMs continue to maintain authority then edge is likely not going to be considered for the majority of robotics. This would look like a Starlink access point to every robot and their models running in cloud, with no network drops or outages and low latency comparable to edge devices."
+  scope: "Creating benchmarks to monitor x-risk behavior for robotics in simulations, then apply monitoring methods to those simulations to create methods of detecting when robotics are misbehaving. (Latter is my priority, first one is only done when a threat model has scarce evaluations for that type of behavior.)"
+  why_edge_cloud: "Cloud models like frontier VLM are being used as policy; these need to be monitored just as much as VLA will, as it is unclear how the direction of brains in robotics will go. Until then edge remains to be the core of system one thinking required for robotic tasks, with occasional system two thinking dedicated to the cloud in an asynchronous fashion."
+  why_control: "In my theory of change, without policy we can't regulate AI and cause AI pauses to shift our attention to alignment until we get a collective social movement for it. So until then, control is the tool we must use to mitigate harm in AI safety."
 
 # --- Patterns from Josiah Hanna's UW page (all your words) ---
 # Headshot: put the file at assets/headshot.jpg and set photo: "assets/headshot.jpg". Blank = hidden.
