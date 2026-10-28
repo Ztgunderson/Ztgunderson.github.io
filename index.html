@@ -23,9 +23,8 @@ description: ""  # your words; blank falls back to _config.yml description
     {% if h.scope.in.size > 0 or h.scope.not_now.size > 0 %}<a href="#scope">Scope</a>{% endif %}
     {% if h.how_i_can_help.size > 0 or h.looking_for.size > 0 %}<a href="#help">How I can help you</a>{% endif %}
     {% if live_posts.size > 0 %}<a href="#writing">Writing</a>{% endif %}
-    <a href="{{ '/theory-of-change/' | relative_url }}">Theory of change</a>
     <a href="#projects">Projects</a>
-    <a href="#code">Code</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
     <a href="#contact">Connect with me</a>
   </p>
 </section>
@@ -71,13 +70,12 @@ description: ""  # your words; blank falls back to _config.yml description
     {% for p in top_p %}{% if n < 3 %}{% include paper-item.html p=p %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
     {% for w in top_w %}{% if n < 3 %}{% include post-item.html w=w %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
   </ul>
-  <p class="card-links"><a href="{{ '/writing/' | relative_url }}">All writing</a>{% assign np2 = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}{% if np2.size > 0 %}<a href="{{ '/papers/' | relative_url }}">All papers</a>{% endif %}</p>
+  <p class="card-links"><a href="{{ '/publications/' | relative_url }}#writing">All writing</a></p>
   <p><a class="social-btn subscribe" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>
 </section>
 {% endif %}
 
 {% assign top_proj = site.data.projects | where: "top", true %}
-{% assign more_proj = site.data.projects | where: "more", true %}
 {% assign pc = 0 %}{% for p in top_proj %}{% if p.show %}{% if p.title != "" or p.repo != "" %}{% assign pc = pc | plus: 1 %}{% endif %}{% endif %}{% endfor %}
 {% if pc > 0 %}
 <section class="home-sec" id="projects">
@@ -93,28 +91,9 @@ description: ""  # your words; blank falls back to _config.yml description
     </article>
   {% endif %}{% endif %}{% endfor %}
   </div>
-  {% if more_proj.size > 0 %}
-  <h3 id="more-projects">More projects</h3>
-  <ul class="more-projects">
-  {% for p in more_proj %}{% if p.show %}{% assign repo_name = p.repo | split: "/" | last %}
-    <li><span class="t">{% if p.title != "" %}{{ p.title }}{% else %}{{ repo_name }}{% endif %}</span> <span class="muted">{{ p.area }} · {{ p.status }}</span>
-    <span class="card-links">{% assign live = p.links | where_exp: "l", "l.url != ''" %}{% for l in live %}{% if l.url != p.repo %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}{% if p.repo != "" %}<a class="repo-link" href="{{ p.repo }}">{% include icons/github.svg %} {{ repo_name }}</a>{% endif %}</span></li>
-  {% endif %}{% endfor %}
-  </ul>
-  {% endif %}
+  <p class="card-links"><a href="{{ '/publications/' | relative_url }}#projects">All AI safety work</a></p>
 </section>
 {% endif %}
-
-<section class="home-sec" id="code">
-  <h2>Code</h2>
-  <p class="muted">Every public repo on <a href="{{ h.contact.github }}">github.com/Ztgunderson</a>, with the research repos first. Seen vs. Followed lives in the I-Spy-Robot organization.</p>
-  <ul class="repo-list">
-  {% assign pinned = site.data.repos | where: "pin", true %}{% assign others = site.data.repos | where_exp: "r", "r.pin != true" %}
-  {% for r in pinned %}<li><a href="{{ r.url }}">{{ r.name }}</a><span class="pin">pinned</span>{% if r.desc != "" %}<span class="meta">{{ r.desc }}</span>{% endif %}{% if r.lang != "" %}<span class="meta">{{ r.lang }}</span>{% endif %}</li>{% endfor %}
-  {% for r in others %}<li><a href="{{ r.url }}">{{ r.name }}</a>{% if r.fork %} <span class="muted">(fork)</span>{% endif %}{% if r.desc != "" %}<span class="meta">{{ r.desc }}</span>{% endif %}{% if r.lang != "" %}<span class="meta">{{ r.lang }}</span>{% endif %}</li>{% endfor %}
-  </ul>
-  <p class="card-links"><a href="{{ h.contact.github }}">All code on GitHub</a></p>
-</section>
 
 <section class="home-sec" id="contact">
   <h2>Connect with me</h2>

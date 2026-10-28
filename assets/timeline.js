@@ -6,7 +6,7 @@
   // they are added to the timeline here, so nothing is entered twice.
   function slug(t) { return String(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40); }
   (data.writing || []).forEach(function (w) {
-    if (w.status !== 'published' || !w.title || !w.url || !w.date) return;
+    if (w.status !== 'published' || !w.title || !w.url || !w.date || w.timeline === false) return;
     data.events = (data.events || []).concat([{ id: 'w-' + slug(w.title), chapter: 'now', category: 'writing',
       tags: ['ai-safety', 'writing'], date: w.date, title: w.title, summary: w.summary || '',
       status: 'sourced', sources: [{ label: w.venue || 'Read', url: w.url }] }]);

@@ -1,0 +1,51 @@
+---
+layout: default
+title: Publications
+description: "Projects, code and writing by Zachary Gunderson."
+permalink: /publications/
+---
+{% assign h = site.data.home %}
+{% assign live_posts = site.data.writing | where: "status", "published" | where_exp: "w", "w.url != ''" | where_exp: "w", "w.title != ''" %}
+{% assign papers = site.data.papers | where_exp: "p", "p.show" | where_exp: "p", "p.title != ''" %}
+<section class="intro">
+  <h1>Publications</h1>
+  <p class="jump"><a href="#projects">Projects, papers and technical</a><a href="#writing">Writing and governance</a></p>
+</section>
+
+<section class="home-sec" id="projects">
+  <h2>Projects, papers and technical</h2>
+  <p class="muted">AI safety work only. Every other repo is listed on <a href="{{ h.contact.github }}">GitHub</a>.</p>
+  <div class="cards">
+  {% for p in site.data.projects %}{% if p.show and p.top %}{% assign repo_name = p.repo | split: "/" | last %}
+    <article class="card feature">
+      <p class="card-meta">{{ p.area }} · <span class="status">{{ p.status }}</span></p>
+      <h3>{% if p.title != "" %}{{ p.title }}{% else %}{{ repo_name }}{% endif %}</h3>
+      {% if p.finding != "" %}<p>{{ p.finding }}</p>{% endif %}
+      <p class="card-links">{% assign live = p.links | where_exp: "l", "l.url != ''" %}{% for l in live %}{% if l.url != p.repo %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}{% if p.repo != "" %}<a class="repo-link" href="{{ p.repo }}">{% include icons/github.svg %} {{ repo_name }}</a>{% endif %}</p>
+    </article>
+  {% endif %}{% endfor %}
+  </div>
+  <h3 id="more-projects">More projects</h3>
+  <ul class="more-projects">
+  {% for p in site.data.projects %}{% if p.show and p.more %}{% assign repo_name = p.repo | split: "/" | last %}
+    <li><span class="t">{% if p.title != "" %}{{ p.title }}{% else %}{{ repo_name }}{% endif %}</span> <span class="muted">{{ p.area }} · {{ p.status }}</span>
+    <span class="card-links">{% assign live = p.links | where_exp: "l", "l.url != ''" %}{% for l in live %}{% if l.url != p.repo %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}{% if p.repo != "" %}<a class="repo-link" href="{{ p.repo }}">{% include icons/github.svg %} {{ repo_name }}</a>{% endif %}</span></li>
+  {% endif %}{% endfor %}
+  </ul>
+  <h3 id="code">Code</h3>
+  <ul class="repo-list">
+  {% assign pinned = site.data.repos | where: "pin", true %}
+  {% for r in pinned %}<li><a href="{{ r.url }}">{{ r.name }}</a>{% if r.desc != "" %}<span class="meta">{{ r.desc }}</span>{% endif %}</li>{% endfor %}
+  </ul>
+  {% if papers.size > 0 %}<h3>Papers</h3><ul class="writing papers">{% for p in papers %}{% include paper-item.html p=p %}{% endfor %}</ul>{% endif %}
+  {% assign ph = site.data.papers | where_exp: "p", "p.show != true" %}{% for p in ph %}{% if p.placeholder %}<p class="muted">{{ p.placeholder }}</p>{% endif %}{% endfor %}
+</section>
+
+<section class="home-sec" id="writing">
+  <h2>Writing and governance</h2>
+  {% assign sections = live_posts | map: "section" | uniq %}
+  {% for sec in sections %}<h3>{{ sec }}</h3>
+  <ul class="writing">{% for w in live_posts %}{% if w.section == sec %}{% include post-item.html w=w %}{% endif %}{% endfor %}</ul>{% endfor %}
+  <p class="card-links"><a href="{{ h.contact.substack }}">Substack</a><a href="{{ h.contact.lesswrong }}">LessWrong</a></p>
+  <p><a class="social-btn subscribe" href="{{ h.contact.substack }}">{% include icons/substack.svg %}<span>Subscribe on Substack</span></a></p>
+</section>

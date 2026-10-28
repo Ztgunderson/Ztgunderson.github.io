@@ -22,6 +22,17 @@
   image: ""
   top: true
 
+- status: published
+  title: "Layterms"
+  section: AI Safety
+  venue: Layterms
+  date: "2026-09"
+  url: "https://layterms.org/"
+  summary: "A nonpartisan walk-through museum of AI."   # your track title from the timeline
+  image: ""
+  top: true
+  timeline: false   # already on the timeline as the Layterms line
+
 # ---------- placeholders (status: planned) ----------
 - status: planned
   # topic: China vs US robotics policy (written)

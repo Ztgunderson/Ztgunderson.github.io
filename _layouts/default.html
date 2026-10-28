@@ -23,7 +23,7 @@
   <header class="site-head">
     <a class="name" href="{% if page.profile %}{{ page.url | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ site.title }}</a>
     <nav aria-label="Main">
-      {% unless page.profile %}<a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a><a href="{{ '/theory-of-change/' | relative_url }}"{% if page.url contains 'theory-of-change' %} aria-current="page"{% endif %}>Theory of Change</a><a href="{{ '/full/' | relative_url }}"{% if page.url contains '/full' %} aria-current="page"{% endif %}>Timeline</a><a href="{{ '/physical-ai-safety/' | relative_url }}"{% if page.url contains 'physical-ai-safety' %} aria-current="page"{% endif %}>Physical AI Safety Map</a>{% endunless %}
+      {% unless page.profile %}<a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a><a href="{{ '/publications/' | relative_url }}"{% if page.url contains 'publications' %} aria-current="page"{% endif %}>Publications</a><a href="{{ '/full/' | relative_url }}"{% if page.url contains '/full' %} aria-current="page"{% endif %}>Timeline</a>{% endunless %}
     </nav>
   </header>
   <main id="main">{{ content }}</main>

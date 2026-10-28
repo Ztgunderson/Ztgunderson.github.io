@@ -25,7 +25,7 @@ headline: ""
 # 30-SECOND PITCH: three points, your words, ~25 words each (~75 spoken words total).
 pitch:
   # Oct 16, your words verbatim (spelling fixes only: Transiioning -> Transitioning).
-  who_i_am: "Edge AI engineer working on Physical AI safety for Generalist Robotics. Track record of deploying computer vision projects in production. Researcher on <a href=\"/physical-ai-safety/\">Physical AI Safety</a> through <a href=\"/#projects\">hackathons</a>, <a href=\"/papers/\">workshop papers</a>, and <a href=\"/#code\">public code</a>."
+  who_i_am: "Edge AI engineer working on Physical AI safety for Generalist Robotics. Track record of deploying computer vision projects in production. Researcher on Physical AI Safety through <a href=\"/#projects\">hackathons</a>, <a href=\"/publications/#writing\">workshop papers</a>, and <a href=\"/publications/#projects\">public code</a>."
   # Shown as "What I do". Previous one-liner (Oct 15 v2): "Using edge based small trusted models to monitor misalignment or
   # prevent misuse on cloud models and RFM in generalist robotic tasks."
   scope: "I build monitoring methods and evaluations to improve AI oversight deployed in robotics and agent systems."

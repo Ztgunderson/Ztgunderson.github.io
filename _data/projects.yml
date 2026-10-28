@@ -7,7 +7,7 @@
 # Projects on the home page, in theory-of-change order (top = most central).
 # Fields:
 #   finding: ONE sentence result in your words. Blank = card shows "In progress".
-#   status: pilot | in progress | complete | under review | planned
+#   status: pilot | in progress | complete | parked | under review | planned
 #   links: label + url; entries with an empty url are hidden.
 #   show: false hides a project entirely (use for anything under review/anonymous).
 # Text marked "(from site)" is copied from your existing timeline entries.
@@ -105,17 +105,16 @@
     - { label: Apart project, url: "https://apartresearch.com/sprints/projects/small-decision-models-as-blackbox-monitors-for-covert-agent-behaviour-lrfp" }
 
 - id: mirage-steering
-  repo: ""
+  repo: "https://github.com/Ztgunderson/mirage-probes-steering"
   top: false
-  # draft title (AI): Steering on medical images (MIRAGE)
-  title: ""
+  more: true
+  title: "Mirage probes: recreation and steering on medical VQA"   # the report's own title
   area: Steering / interpretability
-  status: in progress
+  status: complete
   finding: ""
   show: true
   links:
-    - { label: Post, url: "" }
-    - { label: Code, url: "" }
+    - { label: Report, url: "https://ztgunderson.github.io/mirage-probes-steering/" }
 
 - id: honeypots
   repo: "https://github.com/Ztgunderson/sirens_discovery"
@@ -123,7 +122,7 @@
   more: true
   title: "Sirens for Agents"
   area: AI control / evals
-  status: complete
+  status: parked
   # (from site)
   # draft finding (AI, from timeline): "Tested whether covert model behavior on SHADE-Arena can be found by resampling a model's actions rather than its reasoning; discovery turned out to be compute-bound, and I released the adaptive search method."
   finding: ""
@@ -136,7 +135,7 @@
 - id: tibetan-asr
   repo: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline"
   top: false
-  more: true
+  more: false   # Edge ML, not AI safety work: listed on GitHub and the timeline only
   title: "Domain and capacity in low-resource Tibetan speech recognition"   # your poster title, from the timeline
   area: Edge ML
   status: complete
