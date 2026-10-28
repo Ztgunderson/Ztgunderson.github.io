@@ -8,8 +8,7 @@
 # monitoring methods and red team evaluations to build intervention methods and standards for Physical AI Control."
 # Previous (Oct 14): "Make sure edge robots are monitored, because continual
 # learning and automated data collection make traditional AI safety risks worse."
-mission: "Developing monitoring methods and evaluations that mitigate the physical risks caused by robotic foundation models"
-
+mission: "Edge AI engineer working on AI safety. Creating monitoring methods and evaluations for robotics and agents."
 # "Now" banner (Neel Nanda pins one call to action above everything). Your words.
 # e.g. what you're doing this month + one ask. Leave text blank to hide.
 now:
@@ -64,7 +63,7 @@ theory_of_change:
 # Headshot: put the file at assets/headshot.jpg and set photo: "assets/headshot.jpg". Blank = hidden.
 photo: ""
 # First-person bio, ~3 sentences (Hanna opens with "I am ..."). Shown under the pitch.
-bio: "Edge AI engineer working on Physical AI safety. Monitoring methods and evaluations for robots and agents."
+bio: ""
 # Third-person short bio for talk intros, Substack, programs (others can copy it). 3-5 sentences.
 short_bio: ""
 # CV link (PDF or Google Doc). Blank = hidden.
