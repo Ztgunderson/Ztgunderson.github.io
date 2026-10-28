@@ -63,20 +63,6 @@
   links:
     - { label: Code, url: "" }
 
-- id: tutor-steering
-  repo: "https://github.com/Ztgunderson/stance-drift"
-  top: true   # CHECK: stance-drift repo matched to this card (same Apart project link)
-  title: "Stance drift in multi-turn agent conversations"
-  area: Steering / interpretability
-  status: complete
-  # Your own words from the stance-drift notes (apostrophe added):
-  finding: "I used steering vectors to try and improve at run time the models' actions in the tutoring setting. Ultimately I succeeded in my examples but had poor generalizability."
-  show: true
-  links:
-    - { label: Report, url: "https://ztgunderson.github.io/stance-drift/" }
-    - { label: Apart project, url: "https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs" }
-    - { label: Code, url: "" }
-
 - id: i-spy-agent
   repo: "https://github.com/Ztgunderson/I-Spy-Agent"
   top: true
@@ -90,6 +76,20 @@
   links:
     - { label: Report, url: "https://ztgunderson.github.io/I-Spy-Agent/" }
     - { label: Apart project, url: "https://apartresearch.com/sprints/projects/small-decision-models-as-blackbox-monitors-for-covert-agent-behaviour-lrfp" }
+
+- id: tutor-steering
+  repo: "https://github.com/Ztgunderson/stance-drift"
+  top: true   # CHECK: stance-drift repo matched to this card (same Apart project link)
+  title: "Stance drift in multi-turn agent conversations and steering"
+  area: Steering / interpretability
+  status: complete
+  # Your own words from the stance-drift notes (apostrophe added):
+  finding: "I used steering vectors to try and improve at run time the models' actions in the tutoring setting. Ultimately I succeeded in my examples but had poor generalizability."
+  show: true
+  links:
+    - { label: Report, url: "https://ztgunderson.github.io/stance-drift/" }
+    - { label: Apart project, url: "https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs" }
+    - { label: Code, url: "" }
 
 - id: mirage-steering
   repo: "https://github.com/Ztgunderson/mirage-probes-steering"
