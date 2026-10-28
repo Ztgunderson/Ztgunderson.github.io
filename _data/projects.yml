@@ -20,7 +20,7 @@
   area: Physical AI safety
   status: pilot
   # The question is the project page's own opening question (your words, published).
-  finding: "Do vision-language-action (VLA) models act on text that appears in the scene?"
+  finding: "Do robotic foundation models act on text that appears in the scene?"
   show: true
   links:
     - { label: Report, url: "https://i-spy-robot.github.io/seen-vs-followed/" }
