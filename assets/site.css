@@ -62,7 +62,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-ra
 
 main { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
 
-.intro { padding: 3.5rem 0 1rem; max-width: var(--measure); }
+.intro { padding: 3.5rem 0 1rem; }
 .intro h1 { font-size: 2.4rem; max-width: 18ch; line-height: 1.1; font-weight: 600; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
 .intro p { color: var(--muted); font-size: 1.15rem; margin: 0; }
 
@@ -236,7 +236,7 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .writing li { padding: 0.35rem 0; border-bottom: 1px solid var(--rule); }
 
 /* Now banner, scope line, post summaries (Neel-style home) */
-.now { margin: 0 0 2rem; padding: 0.75rem 1rem; border-left: 3px solid var(--blue); background: var(--blue-wash); max-width: var(--measure); }
+.now { margin: 0 0 2rem; padding: 0.75rem 1rem; border-left: 3px solid var(--blue); background: var(--blue-wash); }
 .now strong { margin-right: 0.4rem; }
 .intro p.scope-line { color: var(--ink); font-size: 1.05rem; margin-top: 0.6rem; }
 .post-sum { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.95rem; }
@@ -246,8 +246,8 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .headshot { grid-row: 1 / span 6; border-radius: 50%; object-fit: cover; width: 140px; height: 140px; }
 @media (max-width: 600px) { .intro.has-photo { display: block; } .headshot { width: 96px; height: 96px; margin-bottom: 1rem; } }
 .bio { color: var(--ink) !important; font-size: 1rem !important; margin-top: .8rem !important; }
-.audiences dt { font-weight: 600; margin-top: .8rem; } .audiences dd { margin: .2rem 0 0; color: var(--muted); max-width: var(--measure); }
-.short-bio { max-width: var(--measure); color: var(--muted); }
+.audiences dt { font-weight: 600; margin-top: .8rem; } .audiences dd { margin: .2rem 0 0; color: var(--muted); }
+.short-bio { color: var(--muted); }
 
 /* Labelled icon buttons */
 .social { list-style: none; padding: 0 !important; margin: .5rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
@@ -263,7 +263,7 @@ a.social-btn:hover { border-color: var(--blue); color: var(--blue); }
 .connect-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 2rem; }
 .connect-groups h3 { margin: 0 0 .2rem; font-size: .95rem; }
 .intro p.pitch { color: var(--ink); margin-top: .8rem; }
-.pitch3 { margin: 1rem 0 0; max-width: var(--measure); }
+.pitch3 { margin: 1rem 0 0; }
 .pitch3 dt { font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: .7rem; }
 .pitch3 dd { margin: .15rem 0 0; color: var(--ink); font-size: 1.05rem; }
 .repo-link { display: inline-flex; align-items: center; gap: .35rem; }
@@ -291,4 +291,4 @@ time { white-space: nowrap; }
 .pin { font: 600 0.7rem var(--mono); text-transform: uppercase; letter-spacing: 0.06em; border: 1px solid var(--moss); color: var(--moss); border-radius: 999px; padding: 0 0.45rem; margin-left: 0.4rem; }
 
 /* The mission line is the page's h1; the name is already in the site header */
-.intro h1.mission { font-size: clamp(1.7rem, 4.5vw, 2.3rem); max-width: 26ch; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin: 0 0 0.75rem; }
+.intro h1.mission { max-width: none; font-size: clamp(1.7rem, 3.2vw, 2.3rem); line-height: 1.2; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin: 0 0 0.75rem; }
