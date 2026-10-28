@@ -4,20 +4,19 @@
 # 1. Every paper goes here, and only here. It then appears automatically on:
 #    the Papers page (/papers/), the home page, and the timeline.
 # 2. show: false while under double-blind review or embargo. Nothing about it appears anywhere.
-#    When you flip it to true, delete the old "workshop-paper-2026" entry in timeline.yml so it isn't listed twice.
+#    (the old "workshop-paper-2026" timeline entry was removed when this paper went public, so it is not listed twice.)
 # 3. status: under review | accepted | published | preprint | poster
 # 4. title and summary are yours (the paper's own title is fine).
 # 6. top: true puts it in the home page "Writing" section (top 3 across writing + papers).
 # 5. date: YYYY-MM or YYYY-MM-DD (submission or publication date).
 
-- show: false   # double-blind review: flip after the decision
-  placeholder: "SPAIS @ CoRL 2026 workshop submission (under double-blind review; title withheld)"   # shown on /papers/ while show is false
-  title: ""
-  authors: ""
-  venue: ""      # e.g. SPAIS workshop @ CoRL 2026
-  status: under review
+- show: true
+  title: "Seen vs. Followed: A Protocol for Measuring Contextual Awareness of In-Scene Text in Vision-Language-Action Models"
+  authors: "Zachary Gunderson"
+  venue: "SPAIS workshop @ CoRL 2026"
+  status: submitted
   date: "2026-10-01"
-  pdf: ""
-  code: ""
-  summary: ""
+  pdf: "https://i-spy-robot.github.io/seen-vs-followed/assets/seen-vs-followed-spais-submission.pdf"
+  code: "https://github.com/I-Spy-Robot/seen-vs-followed"
+  summary: "The submitted version covers the earlier LIBERO-Goal experiments. The DROID follow-up is on the project page."
   top: true

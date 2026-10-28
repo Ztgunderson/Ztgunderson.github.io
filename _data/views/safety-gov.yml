@@ -185,19 +185,6 @@ events:
   summary: Volunteer coach for a group in Lens Academy's AI Control intensive, five 90-minute sessions from Oct 12 to 16.
   status: self-reported
   sources: []
-- id: workshop-paper-2026
-  chapter: now
-  category: ai-safety
-  tracks:
-  - ai-safety-pivot
-  tags:
-  - ai-safety
-  - technical
-  date: '2026-10-01'
-  title: Submitted my first workshop paper
-  summary: Submitted a 4-page research paper to an AI safety workshop. It's under double-blind review, so I'll share the title, venue, and paper once decisions are out in mid-October.
-  status: self-reported
-  sources: []
 - id: capitol-advocacy
   chapter: engineering
   category: advocacy
@@ -393,7 +380,6 @@ profiles:
   - dc-cancer-advocacy
   - apart-incident-response
   - apart-digital-minds
-  - workshop-paper-2026
   - tibetan-asr
   - gnd
   - heartland

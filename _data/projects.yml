@@ -25,19 +25,6 @@
   links:
     - { label: Report, url: "https://i-spy-robot.github.io/seen-vs-followed/" }
 
-- id: sticky-note-vla
-  repo: ""
-  top: false
-  # draft title (AI): Do VLA robot policies follow text they see in the scene?
-  title: ""
-  area: Physical AI safety
-  status: under review
-  finding: ""
-  show: false   # double-blind review: flip to true after the decision
-  links:
-    - { label: Paper, url: "" }
-    - { label: Code, url: "" }
-
 - id: eval-awareness-pilot
   repo: ""
   top: false
