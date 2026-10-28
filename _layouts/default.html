@@ -15,16 +15,17 @@
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
     <a class="name" href="{% if page.profile %}{{ page.url | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ site.title }}</a>
-    <nav>
-      {% unless page.profile %}<a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/theory-of-change/' | relative_url }}">Theory of Change</a><a href="{{ '/full/' | relative_url }}">Timeline</a><a href="{{ '/physical-ai-safety/' | relative_url }}">Physical AI Safety Map</a>{% endunless %}
+    <nav aria-label="Main">
+      {% unless page.profile %}<a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a><a href="{{ '/theory-of-change/' | relative_url }}"{% if page.url contains 'theory-of-change' %} aria-current="page"{% endif %}>Theory of Change</a><a href="{{ '/full/' | relative_url }}"{% if page.url contains '/full' %} aria-current="page"{% endif %}>Timeline</a><a href="{{ '/physical-ai-safety/' | relative_url }}"{% if page.url contains 'physical-ai-safety' %} aria-current="page"{% endif %}>Physical AI Safety Map</a>{% endunless %}
     </nav>
   </header>
-  <main>{{ content }}</main>
+  <main id="main">{{ content }}</main>
 </body>
 </html>

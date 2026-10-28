@@ -1,5 +1,6 @@
 # RULE: every title and finding is written by Zach.
-# HOME PAGE shows the projects marked top: true (max 3), each linked to its GitHub repo.
+# HOME PAGE shows the projects marked top: true (max 3) as featured cards, then projects marked more: true as a short list.
+# Featured = the I-Spy projects (robot, agents) plus stance-drift. Everything else lives in "More projects" and "Code".
 # repo: full GitHub URL. If title is blank, the card shows the repo's own name until you write a title.
 # Cards with no title and no repo are hidden.
 # Lines marked "draft (AI)" are reminders only; they never appear on the site.
@@ -10,6 +11,19 @@
 #   links: label + url; entries with an empty url are hidden.
 #   show: false hides a project entirely (use for anything under review/anonymous).
 # Text marked "(from site)" is copied from your existing timeline entries.
+
+- id: seen-vs-followed
+  repo: "https://github.com/I-Spy-Robot/seen-vs-followed"
+  top: true
+  more: false
+  title: "Seen vs. Followed"
+  area: Physical AI safety
+  status: pilot
+  # The question is the project page's own opening question (your words, published).
+  finding: "Do vision-language-action (VLA) models act on text that appears in the scene?"
+  show: true
+  links:
+    - { label: Report, url: "https://i-spy-robot.github.io/seen-vs-followed/" }
 
 - id: sticky-note-vla
   repo: ""
@@ -65,17 +79,30 @@
 - id: tutor-steering
   repo: "https://github.com/Ztgunderson/stance-drift"
   top: true   # CHECK: stance-drift repo matched to this card (same Apart project link)
-  # draft title (AI): Guiding open-weight AI tutors without training
-  title: ""
+  title: "Stance drift in multi-turn agent conversations"
   area: Steering / interpretability
   status: complete
-  # (from site) Apart Digital Minds sprint summary:
-  finding: ""
+  # Your own words from the stance-drift notes (apostrophe added):
+  finding: "I used steering vectors to try and improve at run time the models' actions in the tutoring setting. Ultimately I succeeded in my examples but had poor generalizability."
   show: true
   links:
-    - { label: Post, url: "" }
+    - { label: Report, url: "https://ztgunderson.github.io/stance-drift/" }
     - { label: Apart project, url: "https://apartresearch.com/sprints/projects/examining-stance-drifting-in-multiturn-agent-interactions-mexs" }
     - { label: Code, url: "" }
+
+- id: i-spy-agent
+  repo: "https://github.com/Ztgunderson/I-Spy-Agent"
+  top: true
+  more: false
+  title: "I Spy Agent"   # the page's own title
+  area: AI control / monitoring
+  status: in progress
+  # The page's own subtitle (your words, published):
+  finding: "Small decision models as black-box monitors for covert agent behaviour: sabotage hidden in files (LinuxArena) and collusion through covert table talk (NARCBench-Stego)."
+  show: true
+  links:
+    - { label: Report, url: "https://ztgunderson.github.io/I-Spy-Agent/" }
+    - { label: Apart project, url: "https://apartresearch.com/sprints/projects/small-decision-models-as-blackbox-monitors-for-covert-agent-behaviour-lrfp" }
 
 - id: mirage-steering
   repo: ""
@@ -92,9 +119,9 @@
 
 - id: honeypots
   repo: "https://github.com/Ztgunderson/sirens_discovery"
-  top: true
-  # draft title (AI): Discovering honeypots from resampled behavior in evaluation
-  title: ""
+  top: false
+  more: true
+  title: "Sirens for Agents"
   area: AI control / evals
   status: complete
   # (from site)
@@ -102,14 +129,15 @@
   finding: ""
   show: true
   links:
+    - { label: Report, url: "https://ztgunderson.github.io/sirens_discovery/" }
     - { label: Apart project, url: "https://apartresearch.com/sprints/projects/discovering-honeypots-from-resampled-behavior-in-evaluation-w9u3" }
     - { label: Code, url: "" }
 
 - id: tibetan-asr
   repo: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline"
-  top: true
-  # draft title (AI): Domain and capacity in low-resource Tibetan speech recognition
-  title: ""
+  top: false
+  more: true
+  title: "Domain and capacity in low-resource Tibetan speech recognition"   # your poster title, from the timeline
   area: Edge ML
   status: complete
   # (from site)

@@ -1,27 +1,40 @@
-/* Palette: machinist's layout blue on cool paper.
-   Filled node = event has a longer story; hollow node = summary only. */
+/* Fall brand (same tokens as the project reports; see ~/lab/tools/pages/brand/brand.css).
+   Variable names kept from the old blue theme so the timeline CSS needs no edits:
+   --blue is now the rust link/accent color, --blue-wash its light wash.
+   Track and category colors are all >= 3:1 on paper (checked), and every category also has a text label. */
 :root {
-  --paper: #f5f7f9;
-  --ink: #18212c;
-  --muted: #5a6573;
-  --rule: #cfd6df;
-  --blue: #1f47a3;
-  --blue-wash: #e2e9f6;
+  --paper: #f6f1e7;
+  --surface: #fdfaf3;
+  --ink: #2b2118;
+  --muted: #5c4f42;
+  --rule: #d8ccb8;
+  --divider: #000000;
+  --blue: #9a3b12;
+  --blue-wash: #f3e1d3;
+  --moss: #4f5f3a;
+  --saffron: #c99a04;
+  --fall: linear-gradient(90deg, #76885b 0%, #ebb305 30%, #c4621a 62%, #9a3b12 82%, #6b2233 100%);
   --measure: 38rem;
-  --c-ai: #3f7d22; --c-ai-light: #7fb85a; --c-edu: #1f47a3; --c-job: #0f7a73; --c-job-deep: #0a4f5c; --c-gnd: #2f6f8f; --c-int: #b8730f; --c-club: #6a3fbf; --c-sport: #b3263e; --c-adv: #a8327f; --c-adv-deep: #6e1d55; --c-adv-light: #d77fb4;
-  --t1: #b3263e; --t2: #b8730f; --t3: #1f47a3; --t4: #0f7a73; --t5: #6a3fbf; --t6: #3f7d22; --t7: #a8327f; --t8: #5b6b7d;
+  --mono: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --c-ai: #4f5f3a; --c-ai-light: #76885b; --c-edu: #245f7d; --c-job: #1d6a66; --c-job-deep: #0f4a47; --c-gnd: #3f6b86; --c-int: #8a6200; --c-club: #6f3f86; --c-sport: #9a3b12; --c-adv: #8a2b5a; --c-adv-deep: #5e1a3f; --c-adv-light: #b85f90;
+  --t1: #9a3b12; --t2: #8a6200; --t3: #4f5f3a; --t4: #1d6a66; --t5: #6b2233; --t6: #7a5230; --t7: #8a3d6b; --t8: #5c4f42;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #10151c;
-    --ink: #e4e9ef;
-    --muted: #97a3b2;
-    --rule: #2b3542;
-    --blue: #86a6ee;
-    --blue-wash: #1a2640;
-    --c-ai: #8fcf6a; --c-ai-light: #c3eaa6; --c-edu: #86a6ee; --c-job: #4fc7bd; --c-job-deep: #97e6df; --c-gnd: #8cc3dd; --c-int: #f0b45a; --c-club: #b39af0; --c-sport: #f07a8c; --c-adv: #e88cc6; --c-adv-deep: #c46aa8; --c-adv-light: #f6bfe0;
-    --t1: #f07a8c; --t2: #f0b45a; --t3: #86a6ee; --t4: #4fc7bd; --t5: #b39af0; --t6: #8fcf6a; --t7: #e88cc6; --t8: #a9b8c8;
+    --paper: #1b1510;
+    --surface: #251d16;
+    --ink: #f1e8d8;
+    --muted: #bfb09a;
+    --rule: #433727;
+    --divider: #f1e8d8;
+    --blue: #f0a05a;
+    --blue-wash: #3a2616;
+    --moss: #a9bd8a;
+    --saffron: #f0c43c;
+    --c-ai: #a9bd8a; --c-ai-light: #cddcb2; --c-edu: #8cc0dd; --c-job: #6fcfc7; --c-job-deep: #a6e8e2; --c-gnd: #9cc3d9; --c-int: #f0c43c; --c-club: #c9a6e3; --c-sport: #f08a5c; --c-adv: #e891bd; --c-adv-deep: #cf7ba6; --c-adv-light: #f6bfd9;
+    --t1: #f08a5c; --t2: #f0c43c; --t3: #a9bd8a; --t4: #6fcfc7; --t5: #e59aa6; --t6: #d9a46b; --t7: #e891bd; --t8: #bfb09a;
     color-scheme: dark;
   }
 }
@@ -32,15 +45,16 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 400 1.0625rem/1.6 "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 400 1.0625rem/1.6 var(--sans);
 }
 a { color: var(--blue); text-underline-offset: 0.18em; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 2px; }
 
 .site-head {
+  border-bottom: 4px solid var(--divider);
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem;
-  max-width: 56rem; margin: 0 auto; padding: 1.25rem 1.25rem 0;
+  max-width: 56rem; margin: 0 auto; padding: 1.25rem 1.25rem 0.75rem;
 }
 .site-head .name { font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; }
 .site-head nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
@@ -68,7 +82,7 @@ main { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
 .chapter-row > .body { padding: 2.5rem 0 1.5rem; }
 .when {
   text-align: right; padding-top: 0.05rem;
-  font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 600;
+  font-family: var(--mono); font-weight: 600;
   font-size: 1.05rem; line-height: 1.5; color: var(--muted); text-wrap: balance;
 }
 .when-inline { display: none; }
@@ -108,7 +122,7 @@ main { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
 .today-row h3 { color: var(--blue); }
 
 .chapter-head h2 { font-size: 1.75rem; font-weight: 600; line-height: 1.2; margin: 0; }
-.chapter-head .years { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 600; color: var(--blue); font-size: 1.15rem; margin: 0.1rem 0 0.6rem; }
+.chapter-head .years { font-family: var(--mono); font-weight: 600; color: var(--blue); font-size: 1.15rem; margin: 0.1rem 0 0.6rem; }
 .chapter-intro { margin: 0 0 0.5rem; }
 .body h3 { font-size: 1.1rem; font-weight: 600; line-height: 1.35; margin: 0 0 0.2rem; }
 .body p { margin: 0 0 0.35rem; }
@@ -133,7 +147,7 @@ main { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
   .tl { --lane-w: 12px; --cg: 0.5rem; --spine: 1.25rem; --g0: 0px; }
   .row { grid-template-columns: calc(var(--lanes, 0) * var(--lane-w)) var(--spine) minmax(0, 1fr); }
   .row > .when { display: none; }
-  .when-inline { display: block; margin: 0 0 0.1rem !important; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 600; color: var(--muted); }
+  .when-inline { display: block; margin: 0 0 0.1rem !important; font-family: var(--mono); font-weight: 600; color: var(--muted); }
   .intro h1 { font-size: 2.1rem; }
 }
 
@@ -153,7 +167,7 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .rail-mark:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 .rail-mark span {
   position: absolute; right: 22px; top: 50%; transform: translateY(-50%); white-space: nowrap;
-  font: 600 0.9rem/1 "Barlow Condensed", "Arial Narrow", sans-serif; color: var(--muted);
+  font: 600 0.85rem/1 var(--mono); color: var(--muted);
   opacity: 0; transition: opacity 120ms; pointer-events: none;
 }
 .rail:hover .rail-mark span, .rail-mark:focus-visible span { opacity: 1; }
@@ -201,7 +215,7 @@ html { scrollbar-color: var(--blue) transparent; scrollbar-width: thin; }
 .intro .mission { color: var(--ink); font-size: 1.3rem; font-weight: 500; margin: 0 0 0.75rem; }
 .intro .jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; margin-top: 1.25rem; font-weight: 500; }
 .home-sec { padding-top: 2.75rem; }
-.home-sec h2 { font-family: "Barlow Condensed", "Barlow", sans-serif; font-weight: 600; font-size: 1.15rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; }
+.home-sec h2 { border-top: 3px solid var(--divider); padding-top: 0.6rem; font-family: var(--mono); font-weight: 600; font-size: 1.15rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); margin: 0 0 1rem; }
 .home-sec h3 { font-size: 1.05rem; margin: 0.5rem 0 0.4rem; }
 .home-sec ul { padding-left: 1.2rem; margin: 0.25rem 0; }
 .home-sec li { margin: 0.3rem 0; }
@@ -254,3 +268,24 @@ a.social-btn:hover { border-color: var(--blue); color: var(--blue); }
 .pitch3 dd { margin: .15rem 0 0; color: var(--ink); font-size: 1.05rem; }
 .repo-link { display: inline-flex; align-items: center; gap: .35rem; }
 .card h3, .card-links a { overflow-wrap: anywhere; }
+
+/* Accessibility additions */
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--paper); padding: 0.6rem 1rem; z-index: 20; font-family: var(--mono); }
+.skip:focus { left: 0.5rem; top: 0.5rem; }
+.site-head nav a[aria-current="page"] { color: var(--ink); font-weight: 600; text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible, .rail-mark:focus-visible { outline: 3px solid var(--saffron); outline-offset: 3px; border-radius: 2px; }
+.cat { font: 500 0.8rem var(--mono); color: var(--muted); margin: 0 0 0.1rem !important; display: flex; align-items: center; gap: 0.4rem; }
+.cat i { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--c); flex: none; }
+time { white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* Featured vs. more projects, code list */
+.card.feature { border-top: 4px solid var(--moss); background: var(--surface); }
+.more-projects { list-style: none; padding: 0 !important; display: grid; gap: 0.6rem; }
+.more-projects li { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; align-items: baseline; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+.more-projects .t { font-weight: 600; }
+.repo-list { list-style: none; padding: 0 !important; display: grid; gap: 0 2rem; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+.repo-list li { padding: 0.55rem 0; border-bottom: 1px solid var(--rule); min-width: 0; }
+.repo-list a { font-family: var(--mono); font-weight: 600; overflow-wrap: anywhere; }
+.repo-list .meta { display: block; color: var(--muted); font-size: 0.9rem; }
+.pin { font: 600 0.7rem var(--mono); text-transform: uppercase; letter-spacing: 0.06em; border: 1px solid var(--moss); color: var(--moss); border-radius: 999px; padding: 0 0.45rem; margin-left: 0.4rem; }

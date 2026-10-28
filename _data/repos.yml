@@ -1,0 +1,14 @@
+# All public repos for github.com/Ztgunderson, generated 2026-10-28 from the GitHub API (re-run tools/refresh_repos.py).
+# desc is blank unless the repo has a GitHub description; add your own words here. pin: true marks the repos shown first.
+- { name: "I-Spy-Robot/seen-vs-followed", url: "https://github.com/I-Spy-Robot/seen-vs-followed", lang: "Python", desc: "", pin: true, org: true }
+- { name: "I-Spy-Agent", url: "https://github.com/Ztgunderson/I-Spy-Agent", lang: "Python", desc: "", pin: true, fork: false }
+- { name: "sirens_discovery", url: "https://github.com/Ztgunderson/sirens_discovery", lang: "Python", desc: "Sirens for Agents: Resampling-Derived Honeypot Design for Action-Level Detection", pin: true, fork: false }
+- { name: "stance-drift", url: "https://github.com/Ztgunderson/stance-drift", lang: "Jupyter Notebook", desc: "", pin: true, fork: false }
+- { name: "mirage-probes-steering", url: "https://github.com/Ztgunderson/mirage-probes-steering", lang: "Jupyter Notebook", desc: "", pin: true, fork: false }
+- { name: "Ztgunderson.github.io", url: "https://github.com/Ztgunderson/Ztgunderson.github.io", lang: "HTML", desc: "", pin: false, fork: false }
+- { name: "Unload", url: "https://github.com/Ztgunderson/Unload", lang: "TypeScript", desc: "", pin: false, fork: false }
+- { name: "flywheel-grader-qc", url: "https://github.com/Ztgunderson/flywheel-grader-qc", lang: "Python", desc: "Short project to learn about flywheel and quality control in medical imaging for eyes. This is not a deployable flywheel code, just a learning exercise to learn the SDK basics without API access to a real Flywheel database.", pin: false, fork: false }
+- { name: "zero_to_hero_notes", url: "https://github.com/Ztgunderson/zero_to_hero_notes", lang: "Jupyter Notebook", desc: "", pin: false, fork: false }
+- { name: "TibetianBuddhismTransciptionPipeline", url: "https://github.com/Ztgunderson/TibetianBuddhismTransciptionPipeline", lang: "Python", desc: "", pin: false, fork: false }
+- { name: "ECE455", url: "https://github.com/Ztgunderson/ECE455", lang: "Cuda", desc: "", pin: false, fork: false }
+- { name: "solar_car_hardware", url: "https://github.com/Ztgunderson/solar_car_hardware", lang: "", desc: "Repository for solar car electrical hardware made in Altium Designer.", pin: false, fork: true }

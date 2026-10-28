@@ -41,6 +41,7 @@
     return [fmt(x.date, x.precision) || x.when || ''];
   }
   function whenHtml(x, isTrack) { return whenOf(x, isTrack).map(function (s) { return '<span class="w">' + esc(s) + '</span>'; }).join(' '); }
+  function catLabel(x) { var c = catOf(x); return c ? '<p class="cat"><i style="--c: var(--' + esc(c.color) + ')" aria-hidden="true"></i>' + esc(c.label) + '</p>' : ''; }
   function visible(x) { return (!x.draft || (showPh && x.placeholder)) && inStream(x); }
 
   var cats = {}; (data.categories || []).forEach(function (c) { cats[c.id] = c; });
@@ -182,7 +183,7 @@
   var html = out.map(function (r, i) {
     var x = r.x;
     if (r.kind === 'chapter') {
-      return '<div class="row chapter-row layer-' + esc(x.layer || '') + '">' + '<div class="when"></div>' + laneCells(i) + '<div class="spine"></div>' +
+      return '<div class="row chapter-row layer-' + esc(x.layer || '') + '" id="chapter-' + esc(x.id) + '">' + '<div class="when"></div>' + laneCells(i) + '<div class="spine"></div>' +
         '<div class="body chapter-head"><h2>' + esc(x.title) + '</h2><p class="years">' + esc(x.years) + '</p><p class="chapter-intro">' + esc((profile && profile.intros && profile.intros[x.id]) || (tag && x.intros && (x.intros[tag] || (streams[tag] && x.intros[streams[tag].parent]))) || x.intro) + '</p>' + link(x.story, 'Read the longer story') + '</div></div>';
     }
     var isStart = r.kind === 'start';
@@ -223,7 +224,7 @@
       '<div class="when">' + whenHtml(x, isStart) + '</div>' + laneCells(i) +
       '<div class="spine"><span class="dot' + (isStart ? ' start' : '') + '" style="--c: var(--' + esc(rowColor(x)) + ')"></span></div>' +
       (x.context ? '<div class="body"><p class="when-inline">' + whenHtml(x, isStart) + '</p><h3>' + swatch + esc(x.title) + '</h3></div></div>' :
-      '<div class="body"><p class="when-inline">' + whenHtml(x, isStart) + '</p><h3>' + swatch + esc(x.title) + '</h3><p>' + esc(x.summary) + '</p>' +
+      '<div class="body">' + catLabel(x) + '<p class="when-inline">' + whenHtml(x, isStart) + '</p><h3>' + swatch + esc(x.title) + '</h3><p>' + esc(x.summary) + '</p>' +
       (x.placeholder ? '<p class="sources">Dates are placeholders until confirmed</p>' : '') + sources(x) + link(x.story, 'More on this') + tagLinks(x) + '</div></div>');
   }).join('');
 
@@ -254,7 +255,7 @@
     rail.id = 'tl-rail'; rail.className = 'rail'; rail.setAttribute('aria-label', 'Timeline sections');
     rail.innerHTML = '<span class="rail-fill"></span>' + heads.map(function (h, k) {
       var label = h.classList.contains('today-row') ? 'Today' : (h.querySelector('h2') || {}).textContent || '';
-      return '<a class="rail-mark" href="#" data-k="' + k + '"><span>' + esc(label) + '</span></a>';
+      return '<a class="rail-mark" href="#' + esc(h.id || ('section-' + k)) + '" data-k="' + k + '" aria-label="Jump to ' + esc(label) + '"><span>' + esc(label) + '</span></a>';
     }).join('');
     document.body.appendChild(rail);
     var marks = rail.querySelectorAll('.rail-mark'), fill = rail.querySelector('.rail-fill');
@@ -276,7 +277,7 @@
     }
     rail.addEventListener('click', function (e) {
       var a = e.target.closest('.rail-mark'); if (!a) return;
-      e.preventDefault(); heads[+a.getAttribute('data-k')].scrollIntoView({ behavior: 'smooth' });
+      e.preventDefault(); var tgt = heads[+a.getAttribute('data-k')]; tgt.setAttribute('tabindex', '-1'); tgt.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); tgt.focus({ preventScroll: true });
     });
     if (!window.__railBound) {
       window.__railBound = true;
@@ -286,6 +287,8 @@
     window.__railUpdate = update; window.__railPlace = place;
     place();
   }
+  root.setAttribute('role', 'list'); root.setAttribute('aria-label', 'Timeline, newest first');
   root.innerHTML = html || '<p class="empty">Nothing in this view yet.</p>';
+  [].forEach.call(root.querySelectorAll('.row'), function (r) { r.setAttribute('role', 'listitem'); });
   buildRail();
 })();

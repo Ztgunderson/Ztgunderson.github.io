@@ -64,7 +64,7 @@ theory_of_change:
 # Headshot: put the file at assets/headshot.jpg and set photo: "assets/headshot.jpg". Blank = hidden.
 photo: ""
 # First-person bio, ~3 sentences (Hanna opens with "I am ..."). Shown under the pitch.
-bio: ""
+bio: "Edge AI engineer working on Physical AI safety. Monitoring methods and evaluations for robots and agents."
 # Third-person short bio for talk intros, Substack, programs (others can copy it). 3-5 sentences.
 short_bio: ""
 # CV link (PDF or Google Doc). Blank = hidden.
