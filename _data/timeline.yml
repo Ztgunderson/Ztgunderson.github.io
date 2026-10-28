@@ -424,6 +424,36 @@
   sources:
   - label: Certificate
     url: https://bluedot.org/certification?r=recQ33carRjA5jsbv
+- id: bluedot-ai-governance
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  - governance
+  tracks:
+  - ai-safety-pivot
+  date: '2026-11-01'
+  title: AI Governance (BlueDot Impact)
+  summary: Finishing BlueDot Impact's AI Governance course this week.
+  status: self-reported
+  sources:
+  - label: Course (BlueDot Impact)
+    url: https://bluedot.org/courses/ai-governance
+- id: bluedot-technical-ai-safety
+  chapter: now
+  category: ai-safety
+  tags:
+  - ai-safety
+  - technical
+  tracks:
+  - ai-safety-pivot
+  date: '2026-10-26'
+  title: Technical AI Safety (BlueDot Impact)
+  summary: Started BlueDot Impact's Technical AI Safety course this week. It runs six weeks in total, and I'm taking it part time.
+  status: self-reported
+  sources:
+  - label: Course (BlueDot Impact)
+    url: https://bluedot.org/courses/technical-ai-safety
 - id: level-set
   chapter: now
   category: club
