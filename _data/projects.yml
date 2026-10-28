@@ -69,7 +69,7 @@
   more: false
   title: "I Spy Agent"   # the page's own title
   area: AI control / monitoring
-  status: in progress
+  status: complete
   # The page's own subtitle (your words, published):
   finding: "Small decision models as black-box monitors for covert agent behaviour: sabotage hidden in files (LinuxArena) and collusion through covert table talk (NARCBench-Stego)."
   show: true
