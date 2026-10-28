@@ -459,6 +459,21 @@
   sources:
   - label: Course (BlueDot Impact)
     url: https://bluedot.org/courses/technical-ai-safety
+- id: controlai-baldwin-meeting
+  chapter: now
+  category: advocacy
+  tags:
+  - leadership
+  - advocacy
+  - ai-safety
+  - governance
+  tracks:
+  - controlai-wi
+  date: '2026-10-27'
+  title: Met with Senator Tammy Baldwin's office for ControlAI
+  summary: Met with Senator Tammy Baldwin's office for ControlAI, with the team from the ControlAI Wisconsin action group.
+  status: self-reported
+  sources: []
 - id: level-set
   chapter: now
   category: club
