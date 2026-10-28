@@ -8,8 +8,9 @@ description: ""  # your words; blank falls back to _config.yml description
 {% assign titled = site.data.projects | where_exp: "p", "p.title != ''" %}
 <section class="intro{% if h.photo != "" %} has-photo{% endif %}">
   {% if h.photo != "" %}<img class="headshot" src="{{ h.photo | relative_url }}" alt="{{ site.title }}" width="140" height="140">{% endif %}
-  <h1>{% if h.headline != "" %}{{ h.headline }}{% else %}{{ site.title }}{% endif %}</h1>
-  {% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
+  {% if h.headline != "" %}<h1>{{ h.headline }}</h1>{% if h.mission != "" %}<p class="mission">{{ h.mission }}</p>{% endif %}
+  {% elsif h.mission != "" %}<h1 class="mission">{{ h.mission }}</h1>
+  {% else %}<h1>{{ site.title }}</h1>{% endif %}
   {% if h.pitch.who_i_am != "" or h.pitch.scope != "" or h.pitch.how_i_can_help != "" %}
   <dl class="pitch3">
     {% if h.pitch.who_i_am != "" %}<dt>Who I am</dt><dd>{{ h.pitch.who_i_am }}</dd>{% endif %}
