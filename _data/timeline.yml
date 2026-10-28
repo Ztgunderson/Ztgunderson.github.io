@@ -176,6 +176,7 @@
   tracks:
   - lens-academy
   tags:
+  - education
   - ai-safety
   - advocacy
   - governance
@@ -192,6 +193,7 @@
   tracks:
   - lens-academy
   tags:
+  - education
   - ai-safety
   - advocacy
   - governance
@@ -413,6 +415,7 @@
   chapter: now
   category: ai-safety
   tags:
+  - education
   - ai-safety
   - governance
   tracks:
@@ -428,6 +431,7 @@
   chapter: now
   category: ai-safety
   tags:
+  - education
   - ai-safety
   - governance
   tracks:
@@ -443,6 +447,7 @@
   chapter: now
   category: ai-safety
   tags:
+  - education
   - ai-safety
   - technical
   tracks:
@@ -503,6 +508,7 @@
   tracks:
   - lens-academy
   tags:
+  - education
   - ai-safety
   - field-building
   date: '2026-10-10'
